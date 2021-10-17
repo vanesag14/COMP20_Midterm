@@ -1,0 +1,140 @@
+<html>
+    <body>
+        <head>
+            <title> Contact Us </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <style>
+                body {
+                    background-color: #ffdbdd;
+                    padding-top: 70px;
+
+                }
+
+                h1 {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    color: #e65c7d;
+                    font-size: 50px;
+                    padding: 30px;
+                }
+
+                h2 {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+                    color: #e65c7d;
+                    font-size: 30px;
+                    padding-left: 50px;
+                }
+
+                /* .contactbox { 
+                background-color: #e65c7d; 
+                color: white; 
+                padding: 60px;
+                text-align: center;
+                display: block;
+                flex-wrap: nowrap;
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+                font-size: 30px;
+            } */
+
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-child contactForm {
+                flex: 1;
+                border-radius: 20px;
+                background-color: rgb(221, 207, 207);
+                padding: 15px;
+                max-width: 100%;
+                margin: 20px 50px 20px 50px;
+            }
+
+            .flex-child:first_child {
+                margin-right: 30px;
+            }
+
+            		/* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #e65c7d;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: rgb(149, 128, 170);
+            }
+
+
+            </style>
+        </head>
+        <h1> Contact Us! </h1>
+        <h2> Have a general comment or question? </h2>
+
+        <div class = "flex-container">
+            <div class = "flex-child contactForm">
+                <form action="" method = "get">
+                    <div class="row">
+                    <div class="col-25">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name">
+                </div>
+                </div>
+                
+                <div class="row">
+                <div class="col-25">
+                    <label for="email">Email or Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email">
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-25">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" style="height:200px"></textarea>
+                </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+                </form>
+            </div>
+
+            <div class = "flex-child contactBox">
+                Flex Col 2
+            </div>
+
+
+        </div>
+
+    </body>   
+</html>
