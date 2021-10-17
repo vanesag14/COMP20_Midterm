@@ -1,0 +1,116 @@
+/*make check marks change color when hover, make pink when clicked; make check marks be inline; when screen reaches a certain size, stop the growing */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.sign-up-header {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-header .logo-pic {
+    height: 5em;
+}
+
+.sign-up-header h1 {
+    font-size: 1.5em;
+}
+
+/* STYLES THE FORMS */
+
+.forms {
+    margin-top: 20px;
+    
+}
+
+.forms form {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms .text-input,
+.forms .btn,
+.forms .checkbox{
+    display: block;
+}
+
+.forms .text-input {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 15px;
+    padding-right: 17%;
+}
+
+.forms .checkbox2,
+.forms .checkbox1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.forms .checkbox2 label,
+.forms .checkbox1 label {
+    margin-left: 10px;
+}
+input.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+
+.forms .checkbox1 label {
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.forms .checkbox2 label {
+    font-size: .89em;
+    color: rgb(93, 93, 93);
+}
+
+.forms .terms1,
+.forms .terms2 {
+    font-size: .85em;
+    color: rgb(93, 93, 93);
+}
+
+.forms .terms2 {
+    margin-bottom: 20px;
+}
+
+.forms .btn {
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(240, 151, 196);
+    border-radius: 20px;
+}
+
+.forms #sign-in {
+    background-color: transparent;
+    border: black solid 1px;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+
+
+.forms h2 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+.terms2 a {
+    color: rgb(240, 151, 196);
+}
