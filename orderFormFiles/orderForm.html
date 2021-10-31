@@ -5,200 +5,12 @@
             <title> Order Form </title>
             <link rel = "stylesheet" type = "text/css" href="https://fonts.googleapis.com/css2?family=Actor&display=swap"> 
             <meta name="viewport" content="width=device-width, initial-scale=1">
-
-            <style>
-                body {
-                    background-color: #ffdbdd;
-                }
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-
-                /* NEED TO FIX HEADER ASK VANNESSA: TEXT MOVES SLIGHTLY DOWN AS YOU
-                EXPAND THE SCREEN*/
-                .navbar {
-                    height: 120px;
-                    width: 100%;
-                    position: fixed;
-                    /*box-shadow: 0 7px 20px -9px #000000;*/
-                    display: inline-block;
-                    z-index: 3;
-                }
-
-                nav {
-                    display: flex;
-                    padding: 2% 6%;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-
-                nav img {
-                    width: 250px; /*Logo + Title size */
-                }
-
-                nav .navbar2 {
-                    flex: 1;
-                    text-align: right;
-                    font-family: "IBM Plex Sans";
-                    font-weight: 550;
-                }
-
-                nav ul li {
-                    list-style: none;
-                    display: inline-block;
-                    padding: 8px 12px;
-                    position: relative;
-                }
-
-                nav ul li a{
-                    text-decoration: none;
-                    color: #3A3332;
-                }
-
-                footer {
-                    font-family: "IBM Plex Sans";
-                    position:fixed;
-                    left:0px;
-                    bottom:0px;
-                    height:20px;
-                    width:100%;
-                    background:#3A3332;
-                    color:#EDEDED;
-                    padding: 7px 20px;
-                    letter-spacing: 3px;
-                    font-size: 11.5px;
-                }
-                /*
-                .underNav {
-                }*/
-
-                .imgContaner {
-                    background-image: url("orderFormImg.jpg") no-repeat scroll center top transparent;
-                    height: 400px;
-                    width: 100%;
-                    display: inline-block;
-                    text-align: center;
-                    position: relative;
-                }
-                
-                .header {
-                    text-align:center;
-                    width: 100%;
-                    font-size: 50px;
-                    color: #E55F7f;
-                    font-family: Giulia-Regular;
-                    font-weight: 50px;
-                    margin-top: 30px;
-                }
-
-                #p1 {
-                    text-align:center;
-                    width: 100%;
-                    color: #3A3332;
-                    font-family: Actor;
-                    margin-top: 50px;
-                    font-size: 20px;
-                }
-
-                #p2 {
-                    text-align:center;
-                    width: 100%;
-                    color: #3A3332;
-                    font-family: Actor;
-                    margin-top: 30px;
-                    font-size: 20px;
-                }
-
-                .cakeOrderForm {
-                    margin: 30px 50px;
-                    padding: 30px;
-                    background-color: #e65c7d ;
-                    border-radius: 10px;
-                }
-
-                .pInfo {
-                    float: left;
-                    width: 50%;
-                    padding: 10px;
-                    height: 550px;
-                }              
-
-                .buildCake {
-                    float: left;
-                    width: 50%;
-                    padding: 10px;
-                    height: 550px;
-                }
-
-                #formHeader {
-                    color: white;
-                    text-align: center;
-                    font-size: 30px;
-
-                }
-            
-                .formElements {
-                    text-align: center;
-                }
-
-               input[type=text], select, textarea {
-                    font-family: "Actor";
-                    width: 75%;
-                    padding: 10px;
-                    border: none;
-                    border-radius: 10px;
-                    box-sizing: border-box;
-                    resize: vertical;
-                    margin-top: 15px;
-                } 
-
-                #radio {
-                    margin-top: 15px;
-                    font-family: "Actor";
-                    color: white;
-                }
-
-                input[type=submit] {
-                    margin-top: 30px;
-                    background-color: #3A3332;
-                    color: white;
-                    width: 100%;
-                    padding: 12px 20px;
-                    border: none;
-                    border-radius: 20px;
-                    cursor: pointer;
-                }
-
-                input[type=submit]:hover {
-                    background-color: #e65c7d;
-                    color: white;
-                }
-
-                .cakeOrderForm:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-
-                @media screen and (max-width: 600px) {
-                    .formContainer {
-                        width: 100%;
-                    }
-
-                    .pInfo {
-                        width: 100%;
-                    } 
-
-                    .buildCake {
-                        width: 100%;
-                    }
-                }
-                
-            </style>
+            <link rel="stylesheet" href="orderForm.css"/>
+            		<!-- include jquery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.js" 
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+            crossorigin="anonymous"></script>
         </head>
-    </body>
     <header class= "navbar">
 		<nav>	
 			<!-- logo -->
@@ -209,7 +21,7 @@
 					<li><a href="index.html">  HOME </a></li> 
 					<li><a href="shop.html">SHOP</a></li> 
 					<li><a href="about.html">ABOUT</a></li>
-					<li style="border:solid #E55F7f; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #E55F7f; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
+					<li style="border:solid #3A3332; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #3A3332; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
 				</div>	
 			</ul>
 			
@@ -217,7 +29,8 @@
 	</header>
 
     <div class = "underNav"> 
-        <img class = "imgContaner" src = "orderFormImg.jpg">
+
+                <img class = "imgContainer" src = "orderFormImg.jpg">
             <div class = "header"> Pastelitos' Cake Order Form </div>
             <p id = "p1"> Thank you for choosing Pastelitos for your custom cake order. If you have special <br>
                 requests that aren’t included in the standard order form choices, please note <br>
@@ -225,12 +38,12 @@
 
             <p id = "p2"> <strong> Please submit your order at least 10 days prior to the date you need your order completed by </strong></p>
 
-            <form class = "cakeOrderForm">
+            <div class = "cakeOrderForm">
                 <div class = "formContainer">
                     <div class = "pInfo">
                         <h2 id = "formHeader"> Personal Info </h2>
 
-                        <div class = "formElements">
+                        <form class = "formElements" name = formData onsubmit="return false;">
                             <input type="text" id="userName" name="userName" placeholder="YOUR FULL NAME*">
                             <input type="text" id="rName" name="rName" placeholder="RECIPIENT'S NAME">
                             <input type="text" id="email" name="email" placeholder="EMAIL*">
@@ -239,7 +52,7 @@
                             <input type="text" id="al2" name="al2" placeholder="ADDRESS LINE 2*">
                             <input type="text" id="city" name="city" placeholder="CITY*">
                             <select name="state" id="state">
-                                <option value="" disabled selected="selected">STATE/PROVICE*</option>
+                                <option id = "emptyState" value="" disabled selected="disabled">STATE/PROVINCE*</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -291,7 +104,10 @@
                                 <option value="WV">West Virginia</option>
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
+
                             </select>
+                            <input type="text" id="zCode" name="zCode" placeholder="ZIP CODE*">
+
                             
                             <div id = "radio"> 
                                 <p style = "color: white;"> PREFERRED CONTACT METHOD </p>
@@ -301,25 +117,16 @@
                                 <input type="radio" id="pNumOption" name="contact">
                                 <label for="pNumOption">PHONE</label><br>  
                             </div>
-                        </div>
+                        </form>
 
-                        
-
-                        <!--
-                        <select id="topic" name="topic"> 
-                            <option value="" disabled selected>TOPIC</option>
-                            <option value="question">QUESTION</option>
-                            <option value="comment">COMMENT</option>
-                            <option value="concern">CONCERN</option>
-                        </select> -->
                     </div>
 
                     <div class = "buildCake">
                         <h2 id = formHeader> Build Your Cake </h2>
-                        <div class = "formElements">
+                        <form class = "formElements" name = formData onsubmit="return false;">
 
                             <select id="cFlavor" name="cFlavor"> 
-                                <option value=""  disabled selected="selected">CAKE FLAVOR*</option>
+                                <option id = "d1" value=""  disabled selected="selected">CAKE FLAVOR*</option>
                                 <option value="chocolate">CHOCOLATE</option>
                                 <option value="vanilla">VANILLA</option>
                                 <option value="marble">MARBLE</option>
@@ -330,7 +137,7 @@
                             </select>
 
                             <select id="cSize" name="cSize"> 
-                                <option value=""  disabled selected="selected">CAKE SIZE*</option>
+                                <option id = "d2" value=""  disabled selected="selected">CAKE SIZE*</option>
                                 <option value="8r">8 INCH ROUND (12 servings)</option>
                                 <option value="10r">10 INCH ROUND (18 servings)</option>
                                 <option value="1/4s">1/4 SHEET (25 servings)</option>
@@ -342,26 +149,32 @@
                             </select>
 
                             <select id="occasion" name="occasion"> 
-                                <option value="" disabled selected>OCCASION *</option>
+                                <option id = "d3" value="" disabled selected>OCCASION*</option>
                                 <option value="8r">BIRTHDAY</option>
                                 <option value="10r">ANNIVERSARY</option>
                                 <option value="1/4s">GRADUATION</option>
                                 <option value="1/3s">BRIDAL SHOWER</option>
                                 <option value="1/2s">RELIGIOUS OCCASION</option>
-                                <option value="2/3s">WEDDING</option>
-                                <option value="3/4s">ENGAGEMENT</option>
+                                <option value="2/3s">WEDDING (+%20)</option>
+                                <option value="3/4s">ENGAGEMENT (+%20)</option>
                                 <option value="fulls">JUST BECAUSE</option>
                             </select>
 
-                            <input type="text" id="inscription" name="inscription" placeholder="INSCRIPTION*">
+                            <input type="text" id="inscription" name="inscription" placeholder="INSCRIPTION">
 
-                            <input type="text" id="zCode" name="zCode" placeholder="ZIP CODE*">
                                 <textarea id="specialRequests" name="specialRequests" placeholder="SPECIAL REQUESTS" style="height:200px"></textarea>
-                        </div>
+
+                            <div class = totalBox>
+                                <div id = "totalTitle"> Total: </div>
+                                <div id = "total" value = "0">$0</div>
+
+                            </div>
+                        </form>
                     </div>
+                    <input name = "button" type="button" value="SUBMIT"> 
                 </div>
-                <input type="submit" value="SUBMIT">
-            </form>
+
+            </div>
     </div>
     
 	
@@ -369,5 +182,8 @@
 	<footer>
   	<p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
 	</footer>
-	
+
+    <script type="text/javascript" src = "orderForm.js"> </script>
+
+</body>
 </html>
