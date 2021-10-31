@@ -2,28 +2,30 @@
 <html>
 <header>
     <title>Sign Up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
 </header>
 <body>
     <div class="sign-up-header">
         <a style="text-decoration: none;" href="#">
-            <img class="logo-pic" alt="logo" src="logo.png"/>
+            <img class="logo-pic" src="mini-logo.png" alt="logo">
         </a>
-        <h1>Create your Bakery account</h1>
+        <h1>Create your Pastelitos account</h1>
     </div>
 
 
     <div class="forms">
-        <form action="index.html" method="POST">
+        <form id="main-form" action="index.html" method="POST">
             <label for="name"></label>
-            <input type="name" name="First name" id="first-name" class="text-input" placeholder="First name">
+            <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
             <label for="name"></label>
-            <input type="name" name="Last name" id="last-name" class="text-input" placeholder="Last name">
+            <input type="text" name="lname" id="last-name" class="text-input" placeholder="Last name">
             <label for="email"></label>
             <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
             <label for="password"></label>
-            <input type="password" name="password" id="password" class="text-input" placeholder="Create a password">
+            <input type="password" name="psword" id="password" class="text-input" placeholder="Create a password">
 
             <div class="checkbox1">
                 <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
@@ -42,10 +44,38 @@
             <h2>Already have an account?</h2>
             
             
-            <button type="submit" id="sign-in" class="btn">Sign in</button>
+            <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
            
         </form>
     </div>
+
+    <script language="javascript">
+        $(document).ready (function(){
+            
+            //validation of the sign up form
+            $("#main-form").validate({
+                rules: {
+                    fname: {
+                        required: true
+                    },
+                    lname: {
+                        required: true
+                    },
+                    psword: {
+                        required: true,
+                        minlength: 8
+                    },
+                    email: {
+                        required: true
+                    }
+                },
+                submitHandler: function() {
+                    //put whatever I want the buttons to do in here
+                }
+
+            });
+        });
+    </script>
 </body>
 
 </html>
