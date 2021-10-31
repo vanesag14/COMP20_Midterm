@@ -16,36 +16,102 @@
                     font-weight: normal;
                     font-style: normal;
                 }
+                .navbar {
+                    height: 120px;
+                    width: 100%;
+                    position: 0 0;
+                    z-index: 3;
+                   background-color: #e65c7d;
+                }
+
+                nav {
+                    display: flex;
+                    padding: 30px 100px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                nav img {
+                    width: 250px; /*Logo + Title size */
+                }
+
+                nav .navbar2 {
+                    flex: 1;
+                    text-align: right;
+                    font-family: "IBM Plex Sans";
+                    font-weight: 550;
+                }
+
+                nav ul li {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 8px 12px;
+                    position: relative;
+                }
+
+                nav ul li a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                footer {
+                    font-family: "IBM Plex Sans";
+                    position:fixed;
+                    left:0px;
+                    bottom:0px;
+                    height:30px;
+                    width:100%;
+                    background:#3A3332;
+                    color:#EDEDED;
+                    padding: 7px 20px;
+                    letter-spacing: 3px;
+                    font-size: 11.5px;
+                    margin: auto;
+                }
 
                 body {
                     background-color: #ffdbdd;
-                    padding-top: 70px;
+
+                }
+
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .undernav {
+                    position: relative;
+                    width: 95%;
+                    margin: 30px auto 30px auto;
+                    padding: 30px;
+
+                }
+
+                .flex-child-contactForm{
+                    float: left;
+                    width: 45%;
+                    padding: 10px;
+                    height: fit-content;
 
                 }
 
                 h1 {
-                    font-family: Giulia-Regular;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     color: #e65c7d;
                     font-size: 50px;
-                    margin-left: 40px;
-                    padding: 20px;
                 }
 
                 h2 {
                     font-family: "Actor";
                     color: #3A3332;
                     font-size: 15px;
-                    margin-left: 40px;
-                    position: relative; top: -40px;
+                    margin-top: 20px;
+                } 
+
+                form { 
+                    margin-top: 70px;
                 }
-                
-                .flex-child-contactForm {
-                    position: relative; top: -30px;
-                    padding: 20px;
-                    flex: 50%;
-                    margin-left: 25px;
-                    margin-right: 50px;
-                    }
 
                 input[type=text], select, textarea {
                     font-family: "Actor";
@@ -74,33 +140,11 @@
                     color: white;
                 }
 
-                /* Clear floats after the columns */
-                .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                
-                * {
-                    box-sizing: border-box;
-                } 
-                .flex-container {
-                    display: flex;
-                    flex-direction: row;
-
-                }
-                @media (max-width: 800px) {
-                    .flex-container {
-                        flex-direction: column;
-                    }
-                }
-                
-                .flex-child-col2 {
-                    /*border-style: solid;*/
-                    flex: 50%;
-                    margin-left: 25px;
-                    margin-right: 50px;
-                    position: relative; top: -175px;
+                .flex-child-col2{
+                    float: right;
+                    width: 45%;
+                    padding: 10px;
+                    height: fit-content;;
                 }
 
                 .contactbox { 
@@ -110,6 +154,7 @@
                     color: white; 
                     text-align: center;
                     width: 100%;
+                    border-radius: 10px;
                     font-size: 18px;
                     font-family: "Actor";
                 }
@@ -123,64 +168,113 @@
                     display: block;
                     width: 100%;
                     max-width: 700px;
-                    margin-top: 15px;
+                    margin-top: 25px;
+                    border-radius: 10px;
                 }
 
                 .customcake-header{
-                    margin-top: 15px;
+                    margin-top: 25px;
                     text-align: center;
                     font-size: 30px;
                     color: #e65c7d;
                 }
 
                 .customcake-button {
-                    margin-top: 27px;
+                    margin-top: 29px;
                 }
+
+                .undernav:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                @media screen and (max-width: 600px) {
+                    /*.undernav {
+                        width: 100%;
+                    }*/
+
+                    .flex-child-contactForm {
+                        width: 100%;
+                    } 
+
+                    .flex-child-col2 {
+                        width: 100%;
+                        margin-top: 30px;
+                    }
+                }
+
             </style>
         </head>
-        <h1> Contact Pastelitos </h1>
-        <h2> Submit the form with any questions, comments, <br> or concerns. </h2>
-
-        <div class = "flex-container">
-            <div class="flex-child-contactForm">
-                <form>
-                  <input type="text" id="name" name="firstname" placeholder="FULL NAME">
-              
-                  <input type="text" id="email" name="email" placeholder="EMAIL">
+        <header class= "navbar">
+            <nav>	
+                <!-- logo -->
+                <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
                     
-                  <select id="topic" name="topic"> 
-                    <option value="" disabled selected>TOPIC</option>
-                    <option value="question">QUESTION</option>
-                    <option value="comment">COMMENT</option>
-                    <option value="concern">CONCERN</option>
-                  </select>
-              
-                  <textarea id="message" name="message" placeholder="MESSAGE" style="height:200px"></textarea>
-              
-                  <input type="submit" value="SUBMIT">
-                </form>
-              </div>
-           <div class = "flex-child-col2">
-               <div class = "contactbox">
-                   <div class = "contactbox-header"> 
-                        <strong> Pastelitos  </strong> <br> <br>
-                   </div>
-                    389 Boston Ave, <br>
-                    Medford MA 02155 <br> <br>
-                    (123)-456-7890 <br> <br>
-                    customerservice@pastelitos.com <br>
-                </div> 
-                <img src="ContactUsImg.jpg" alt="contact img" class="image" width="700" height="275">
+                <ul> 
+                    <div class="navbar2"> 
+                        <li><a href="index.html">  HOME </a></li> 
+                        <li><a href="shop.html">SHOP</a></li> 
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li style="border:solid #333333; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #333; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
+                    </div>	
+                </ul>
+                
+            </nav>
+        </header>
 
-                <div class = "customcake-header">
-                    <strong> Want to place an order for <br> a custom cake? </strong>
+        
+        <div class = "undernav">
+                    <div class="flex-child-contactForm">
+                         
+                    <h1> Contact Pastelitos </h1>
+                    <h2> Submit the form with any questions, comments, <br> or concerns. </h2>
+                    
+                    <form>
+                      <input type="text" id="name" name="firstname" placeholder="FULL NAME">
+                  
+                      <input type="text" id="email" name="email" placeholder="EMAIL">
+                        
+                      <select id="topic" name="topic"> 
+                        <option value="" disabled selected>TOPIC</option>
+                        <option value="question">QUESTION</option>
+                        <option value="comment">COMMENT</option>
+                        <option value="concern">CONCERN</option>
+                      </select>
+                  
+                      <textarea id="message" name="message" placeholder="MESSAGE" style="height:200px"></textarea>
+                  
+                      <input type="submit" value="SUBMIT">
+                    </form> 
+                  </div>
+               <div class = "flex-child-col2">
+
+                
+                   <div class = "contactbox">
+                       <div class = "contactbox-header"> 
+                            <strong> Pastelitos  </strong> <br> <br>
+                       </div>
+                        389 Boston Ave, <br>
+                        Medford MA 02155 <br> <br>
+                        (123)-456-7890 <br> <br>
+                        customerservice@pastelitos.com <br>
+                    </div> 
+
+                   
+                    <img src="ContactUsImg.jpg" alt="contact img" class="image" width="700" height="275">
+                    <div class = "customcake-header">
+                        <strong> Want to place an order for <br> a custom cake? </strong>
+                    </div>
+    
+                    <div class = "customcake-button">
+                        <input type="submit" value="START MY ORDER">
+                    </div> 
                 </div>
+            
+        </div> 
 
-                <div class = "customcake-button">
-                    <input type="submit" value="START MY ORDER">
-                </div>
-            </div>
-        </div>
-
+        <footer>
+            <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
+          </footer>
     </body>   
 </html>
