@@ -6,6 +6,14 @@
 	<meta charset="UTF-8"> 
 	<title>Midterm Project</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		
+	
+	</script>
+	
+	
+	
 	
 </head> <!-- end head -->
 
@@ -15,23 +23,148 @@
 			<!-- logo -->
 			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
 				
-			<ul> 
-				<div class="navbar2"> 
-					<li><a href="index.html">  HOME </a></li> 
-					<li><a href="shop.html">SHOP</a></li> 
-					<li><a href="about.html">ABOUT</a></li>
-					<li style="border:solid #333333; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #333; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
-				</div>	
-			</ul>
 			
-		</nav>	
+				<div class="navbar2" id="navbar2">
+					
+						
+					<i class="fa fa-times" onClick="menuHide()"></i>
+					
+					<ul> 
+					<li><a href="index.html">  HOME </a></li>
+					
+					<div class="dropdown"> 	
+						<li class="shop"><a href="products.html">SHOP</a></li>
+						<div class="dropdown-content">
+							 <a href="#" class="order">ORDER FORM</a>
+						 </div>
+					</div>
+					
+					<div class="dropdown"> 
+						<li class="about"><a href="aboutUs.html">ABOUT</a></li>
+						 <div class="dropdown-content">
+							 <a href="#">HISTORY</a>
+						 </div>
+					</div>
+					
+					<li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+					<li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+						
+					</ul>
+				</div>	
+				<i class="fa fa-bars" onClick="menuShow()"></i>
+			
+		</nav>
+	
+	<article class="container1"> 
+		
+		<section class="box-1">
+		<h1>Boston's #1 <br>Pastelito Shop</h1>
+		<br>  <p style="font-size: 23px;  width: 55%; min-width: 300px"> Pastelitos is a local bakery shop with a wide selection  
+		 of treats, from cakes to pastries to freshly made drinks. </p> <br>
+			
+		<br> <p style="border: solid #E55F7F 5px; border-radius: 10px; background: #E55F7F; width: 30%; padding: 10px; color: #fff; padding-left: 20px; min-width: 200px"> Complete our <a href="products.html" style="text-decoration: none; color: white; text-decoration: underline;"> order form</a> online and pick up at any of our 4 Boston locations! </p>	
+			
+		</section>
+	</article>	
+		
 	</header>
 	
+	<article class="container2"> 
+		
+		<section class="box-2"> <!-- Featured Menu-->
+			
+			<h1> Featured Menu</h1>  
+			<h2> Explore our Daily Selection of Cakes</h2>
+			<h3 style= "color: #FAFAFA; border-top: solid #E55F7F 6px; width: 30%; margin: auto; "> line </h3>
+		<div class="cakes">
+			<div class="cake-col"> 
+			<img src="https://lh3.googleusercontent.com/wqdBMwzESaYsDfVwCQHeeXciERdZJBCCPPiN5bMm5rgAeisTvUQMAq2ARMv0mep3i5gb0QdGHRh4alFxZPcXKA8O7K81NcUH6UvwVKAZRb-eRe2V5Rbyb0DuP23lvo_iNFMdIWcCJA=w2400" style="width: 100%">
+				<h3 > Dark Sweet Treat</h3>
+				<h4 style="margin:2%">$29</h4>
+				<p> Having a chocolate craving? Order our classic cocoa dark chocolate cake topped with powdered sugar and with dark chocolate bits sprinkled throughout the inside. Not feeling an entire cake? No problem! Let us know you're just feeling a slice and we'll make it happen.</p>
+				<h4 style="margin-top: 19px"> <a href="#" style="text-decoration: none; color: white; border: solid #333334; padding: 10px; background-color:#333334"> Shop our Cakes </a> </h4>
+			</div>
+			
+			<div class="cake-col">
+			<img src="https://lh3.googleusercontent.com/k_Y6DwVRappZ5nfMFTwxMFty6sTX_cJZXHBCxcnuWhQykJqj0fbXUH4TkDEKwZur9eMkHcwQFXCEZobpF-yHA6Xf_9U5X5z7W70z3QltwCx9-H94e3q4wYwDHM6h00YnKSq4mYwc9Q=w2400" style="width: 100%">
+				
+				<h3> Macaroon Dulce Delight</h3>
+				<h4 style="margin:2%">$39</h4>
+				<p style="padding-right: 25px; "> Our best selling Macaroon cake with dulce de leche is perfect for anyone with a sweet tooth. This cake is great for small birthday parties and is bound to satisfy all ages. </p>
+				<h4 style="margin-top: 54px"> <a href="#" style="text-decoration: none; color: white; border: solid #333334; padding: 10px; background-color:#333334"> Shop our Cakes </a> </h4>
+			</div>
+			
+			<div class="cake-col">
+				<img src="https://lh3.googleusercontent.com/MjygoI0Wmf5SFsREaXq7pdvISOLtELIuR-phNse2zUMAlS_0qkiz6A4L97f8INaIfyaRQgGIqmBq7bNbYhZy-NuAj0gGflHSOa7hO7MbsxikI-2mi9km9rctr-13DYbOkQaZMxGrRA=w2400" style="width: 100%">
+				<h3> Decorative Boda Cake</h3>
+				<h4 style="margin:2%">$59</h4>
+				<p style="margin-bottom: 17px;"> A favorite among brides, our boda cake isn't your typical vanilla wedding cake. Instead, we mixed it up by making it apple cider doughnut flavored. Ideal for smaller weddings, this cake is sure to leave a good impression on your close set of friends and family.</p> 
+				<h4 style="margin-top: 8px"> <a href="#" style="text-decoration: none; color: white; border: solid #333334; padding: 10px; background-color:#333334"> Shop our Cakes </a> </h4> <br>
+			</div>
+		</div>		
+		</section>
+		
+	</article>	
 	
+	<article class="container3">
+		
+		<section class="box-3">
+			<h1> Reviews </h1> <br>
+			<h2> Hear what our lovely customers have to say about our bakery!</h2> <br>
+			<h3 style= "color: #FFD6DC; border-top: solid #E55F7F 6px; width: 30%; margin: auto; "> 0 </h3>
+			
+			<div class="Reviews"> 
+				<div class="review-col">
+					<h3> Melissa Hernandez</h3>
+					<h4> 11.23.19 </h4>
+					<img src="https://lh3.googleusercontent.com/WQOPh5xsYcVdr5WzV4yYFWPlXQxXddIEY4yZBkAHnmRquwnqEEoVOSQR-gbWjRXR5I4c_TDAl2NsiqcHNqfRWnDCngq_WVQXzxPP2KlzwatKDRZopWWPgNlYyJ1QiJHJ4CgMWFRHPA=w2400" style="width:18%; margin-top: 3%">
+					<p> <i>“Muy ricos los pastelitos. Me mude de Miami a Boston y me acuerdan mucho de los de allá.” </i> <br> <br> “Very delicious cakes. I moved from Miami to Boston and they remind me a lot of the ones from home.”</p>
+				
+				</div>
+				<div class="review-col">
+					<h3> David Williams</h3>
+					<h4> 09.19.20 </h4>
+					<img src="https://lh3.googleusercontent.com/HV4ZPMrTTG5_EjSwRnhVwIOGEPZJi2FwqcTqcUB9FgoNbwbydNjgRYwlitaN9rlPi4nhJwtlpbyTaahtMSO8mJq7K3cPiasGwVrqqD9o_0uD5yJW3rbcp6TFaY2u1FS4p0zwIHISeA=w2400" style="width:18%; margin-top: 3%">
+					<p> “I ordered their macaroon cake for my little sisters birthday and she loved it. Now she asks me to take her to Pastelitos everytime we're in the city. I removed half a star because they got rid of their pistachio muffins which were so good...” </p>
+				</div>
+			</div>
+			<div class="review-3" style="min-width: 300px"> 
+				<div class="review-col"> 
+					<h3> Katie Adams</h3>
+					<h4> 05.10.21 </h4>
+					<img src="https://lh3.googleusercontent.com/WQOPh5xsYcVdr5WzV4yYFWPlXQxXddIEY4yZBkAHnmRquwnqEEoVOSQR-gbWjRXR5I4c_TDAl2NsiqcHNqfRWnDCngq_WVQXzxPP2KlzwatKDRZopWWPgNlYyJ1QiJHJ4CgMWFRHPA=w2400" style="width:18%; margin-top: 3%">
+					<p> “<i>Pastelitos </i> is one of my favorite spots in Boston! I go there every time I visit family. The staff treat you like family and offer plenty of free samples, so it's always a pleasure to go into the store. I wish we had a place in Colorado!” </p>
+				</div>
+			</div>
+		</section>
+	
+	</article>
+	
+	<article>
+			<section class="box-6" style="color: #fff;"> <p> empty</p> <p> empty </p> </section>
+	</article>	
+
 	
 	<footer>
   	<p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
 	</footer>
+	
+	
+	
+	
+	<script language="javascript"> 
+		
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	
+	</script>
 	
 	
 </body> <!-- end body -->
