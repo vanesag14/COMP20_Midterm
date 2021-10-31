@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <title> Order Form </title>
+            <link rel = "stylesheet" type = "text/css" href="https://fonts.googleapis.com/css2?family=Actor&display=swap"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="orderForm.css"/>
+            		<!-- include jquery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.js" 
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+            crossorigin="anonymous"></script>
+        </head>
+    <header class= "navbar">
+		<nav>	
+			<!-- logo -->
+			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+				
+			<ul> 
+				<div class="navbar2"> 
+					<li><a href="index.html">  HOME </a></li> 
+					<li><a href="shop.html">SHOP</a></li> 
+					<li><a href="about.html">ABOUT</a></li>
+					<li style="border:solid #3A3332; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #3A3332; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
+				</div>	
+			</ul>
+			
+		</nav>	
+	</header>
+
+    <div class = "underNav"> 
+
+                <img class = "imgContainer" src = "orderFormImg.jpg">
+            <div class = "header"> Pastelitos' Cake Order Form </div>
+            <p id = "p1"> Thank you for choosing Pastelitos for your custom cake order. If you have special <br>
+                requests that aren’t included in the standard order form choices, please note <br>
+                 that in the <strong> Special Requests</strong> section. We’ll call you and confirm the request with you. </p>
+
+            <p id = "p2"> <strong> Please submit your order at least 10 days prior to the date you need your order completed by </strong></p>
+
+            <div class = "cakeOrderForm">
+                <div class = "formContainer">
+                    <div class = "pInfo">
+                        <h2 id = "formHeader"> Personal Info </h2>
+
+                        <form class = "formElements" name = formData onsubmit="return false;">
+                            <input type="text" id="userName" name="userName" placeholder="YOUR FULL NAME*">
+                            <input type="text" id="rName" name="rName" placeholder="RECIPIENT'S NAME">
+                            <input type="text" id="email" name="email" placeholder="EMAIL*">
+                            <input type="text" id="pNum" name="pNum" placeholder="PHONE NUMBER*">
+                            <input type="text" id="al1" name="al1" placeholder="ADDRESS LINE 1*">
+                            <input type="text" id="al2" name="al2" placeholder="ADDRESS LINE 2*">
+                            <input type="text" id="city" name="city" placeholder="CITY*">
+                            <select name="state" id="state">
+                                <option id = "emptyState" value="" disabled selected="disabled">STATE/PROVINCE*</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+
+                            </select>
+                            <input type="text" id="zCode" name="zCode" placeholder="ZIP CODE*">
+
+                            
+                            <div id = "radio"> 
+                                <p style = "color: white;"> PREFERRED CONTACT METHOD </p>
+                                <input type="radio" id="emailOption" name="contact">
+                                <label for="emailOption">EMAIL</label><br>
+
+                                <input type="radio" id="pNumOption" name="contact">
+                                <label for="pNumOption">PHONE</label><br>  
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class = "buildCake">
+                        <h2 id = formHeader> Build Your Cake </h2>
+                        <form class = "formElements" name = formData onsubmit="return false;">
+
+                            <select id="cFlavor" name="cFlavor"> 
+                                <option id = "d1" value=""  disabled selected="selected">CAKE FLAVOR*</option>
+                                <option value="chocolate">CHOCOLATE</option>
+                                <option value="vanilla">VANILLA</option>
+                                <option value="marble">MARBLE</option>
+                                <option value="cheesecake">CHEESECAKE</option>
+                                <option value="rVelvet">RED VELVET</option>
+                                <option value="carrot">CARROT</option>
+                                <option value="lemon">LEMON</option>
+                            </select>
+
+                            <select id="cSize" name="cSize"> 
+                                <option id = "d2" value=""  disabled selected="selected">CAKE SIZE*</option>
+                                <option value="8r">8 INCH ROUND (12 servings)</option>
+                                <option value="10r">10 INCH ROUND (18 servings)</option>
+                                <option value="1/4s">1/4 SHEET (25 servings)</option>
+                                <option value="1/3s">1/3 SHEET (35 servings)</option>
+                                <option value="1/2s">1/2 SHEET (50 servings)</option>
+                                <option value="2/3s">2/3 SHEET (65 servings)</option>
+                                <option value="3/4s">3/4 SHEET (75 servings)</option>
+                                <option value="fulls">FULL SHEET (100 servings)</option>
+                            </select>
+
+                            <select id="occasion" name="occasion"> 
+                                <option id = "d3" value="" disabled selected>OCCASION*</option>
+                                <option value="8r">BIRTHDAY</option>
+                                <option value="10r">ANNIVERSARY</option>
+                                <option value="1/4s">GRADUATION</option>
+                                <option value="1/3s">BRIDAL SHOWER</option>
+                                <option value="1/2s">RELIGIOUS OCCASION</option>
+                                <option value="2/3s">WEDDING (+%20)</option>
+                                <option value="3/4s">ENGAGEMENT (+%20)</option>
+                                <option value="fulls">JUST BECAUSE</option>
+                            </select>
+
+                            <input type="text" id="inscription" name="inscription" placeholder="INSCRIPTION">
+
+                                <textarea id="specialRequests" name="specialRequests" placeholder="SPECIAL REQUESTS" style="height:200px"></textarea>
+
+                            <div class = totalBox>
+                                <div id = "totalTitle"> Total: </div>
+                                <div id = "total" value = "0">$0</div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <input name = "button" type="button" value="SUBMIT"> 
+                </div>
+
+            </div>
+    </div>
+    
+	
+	
+	<footer>
+  	<p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
+	</footer>
+
+    <script type="text/javascript" src = "orderForm.js"> </script>
+
+</body>
+</html>
