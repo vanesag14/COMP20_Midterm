@@ -17,10 +17,7 @@ cakeSizes = new Array(
 
 
 $(document).ready(function() { 
-    //alert('ready!');
-    x = $('select[id ="d1"]');
-    alert(x);
-    getTotal();
+    genTotal();
 });
 
 
@@ -74,7 +71,7 @@ $("input[name = 'button']").focus(function() {
 
 // Generates Total
 function genTotal() {
-    $('select[id^="d"]').change(function() {
+    $("select[id^='cake']").click(function() {
         alert("!");
     });
 }
