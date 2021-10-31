@@ -10,6 +10,10 @@
     background: transparent;
 }
 
+body {
+    background-color: #FFDBDD;
+}
+
 .sign-up-header {
     margin-top: 40px;
     display: flex;
@@ -50,6 +54,7 @@
     border-radius: 3px;
     padding: 15px;
     padding-right: 17%;
+    background-color: white;
 }
 
 .forms .checkbox2,
@@ -71,6 +76,7 @@ input.checkbox{
 .forms .checkbox1 label {
     font-weight: 600;
     font-size: .9em;
+    color:#3a3332;
 }
 
 .forms .checkbox2 label {
@@ -93,21 +99,26 @@ input.checkbox{
     padding: 15px;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: rgb(240, 151, 196);
+    background-color: #3A3332;
     border-radius: 20px;
+    color: white;
 }
 
 .forms #sign-in {
-    background-color: transparent;
-    border: black solid 1px;
+    background-color: white;
+    border: #3A3332 solid 1px;
     padding-right: 12%;
     padding-left: 12%;
+    color: #3A3332;
 }
 
 
 .forms h2 {
     margin-top: 5px;
     margin-bottom: 15px;
+    color:#3a3332;
+    font-weight: normal;
+    font-size: 1.1em;
 }
 
 
