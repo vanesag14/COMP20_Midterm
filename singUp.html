@@ -85,31 +85,15 @@
     </div>
 
     <script language="javascript">
-        $(document).ready (function(){
-            
-            //validation of the sign up form
-            $("#main-form").validate({
-                rules: {
-                    fname: {
-                        required: true
-                    },
-                    lname: {
-                        required: true
-                    },
-                    psword: {
-                        required: true,
-                        minlength: 8
-                    },
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-                }
-
-            });
-        });
+      var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
     </script>
 </body>
 

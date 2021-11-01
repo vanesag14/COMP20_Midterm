@@ -70,22 +70,16 @@
     </div>
     <script language="javascript">
 
-        //validates the form
-        $(document).ready(function() {
-            
-            $("#main-form").validate({
-                rules: {
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-
-                }
-            });
-            
-        });
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	
     </script>
 </body>
 
