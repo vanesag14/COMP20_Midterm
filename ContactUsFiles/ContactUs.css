@@ -8,43 +8,177 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .navbar {
-    height: 120px;
-    width: 100%;
-    position: 0 0;
-    z-index: 3;
-   background-color: #e65c7d;
+	
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(https://lh3.googleusercontent.com/cLTOD_fIwXrRDFdfq0Ka2rbIOT5nT-egvXQE9DFzpvI0ZVaa4pPYtjJyjm-M3qwrJ7VMwuYizHoj8sRaxM16yq-k-OR5BDuRKBCXuw_vknY6iARXVYqIoGMnEnCwS_hxI7L0QfttXw=w2400); 
+	background-size: cover; 
+    z-index: 200;
+
+	
 }
 
 nav {
-    display: flex;
-    padding: 30px 100px;
-    justify-content: space-between;
-    align-items: center;
+	width: 88%;
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255,214,220,0.80);
+	position: fixed;
+
+	
 }
 
+
 nav img {
-    width: 250px; /*Logo + Title size */
+	width: 250px; /*Logo + Title size */
 }
 
 nav .navbar2 {
-    flex: 1;
-    text-align: right;
-    font-family: "IBM Plex Sans";
-    font-weight: 550;
+	
+	flex: 1;
+	text-align: right;
+	font-family: "IBM Plex Sans";
+	font-weight: 550;
+	position: relative;
+  	display: inline-block;
+	
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: white;
+	
+	text-decoration: none;
+	color: #E55F7f;
+
 }
+
+nav .fa {
+	display: none;
+}
+
+nav .fas {
+	display: none;
+}
+
+.navbar2 .contactus {
+	
+		border:solid #333333; 
+		border-radius: 20px; 
+		padding-right: 18px; 
+		padding-left: 18px; 
+		background: #333; 
+		color: #fff !important; 
+}
+
+
+
+/* Dropdown menu on Navbar */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFF0F1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .order {
+	min-width: 105px;
+}
+
+.dropdown-content a {
+  color: #E55F7F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #FFDADE;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .about {
+	background-color: #FFFFFF;
+
+}
+
+.dropdown:hover .shop {
+	background-color: #FFFFFF;
+}
+
+
+@media (max-width: 700px) {
+	
+	.container1 .box-1 h1 {
+		font-size: 50px;
+	}
+	
+	.container1 .box-1 p {
+		font-size: 20px;
+	}
+	.container2 .box-2 {
+		font-size: 30px;
+	}
+	
+	nav ul li {
+		display: block;
+	}
+	
+	nav .navbar2 {
+		position: absolute;
+		background: #fff;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		transition: 0.75s;
+	}
+	
+	
+	nav .fa {
+	display: block;
+	color: #333333;
+	margin: 15px;
+	font-size: 25px;
+	cursor: pointer; 
+	}
+
+	
+	nav ul {
+		padding: 30px;
+	}
+	
+	nav ul li .contactus {
+		color: #E55F7F;
+	}
+	
+	.navbar2 .contactus { 
+		border: none;
+	}	
+}
+
 
 footer {
     font-family: "IBM Plex Sans";
