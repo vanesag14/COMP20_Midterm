@@ -240,3 +240,59 @@ input.checkbox{
 .terms2 a {
     color: rgb(240, 151, 196);
 }
+
+@media (max-width: 700px) {
+	
+	.container1 .box-1 h1 {
+		font-size: 50px;
+	}
+	
+	.container1 .box-1 p {
+		font-size: 20px;
+	}
+	.container2 .box-2 {
+		font-size: 30px;
+	}
+	
+	nav ul li {
+		display: block;
+	}
+	
+	nav .navbar2 {
+		position: absolute;
+		background: #fff;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		transition: 0.75s;
+	}
+	
+	
+	nav .fa {
+	display: block;
+	color: #333333;
+	margin: 15px;
+	font-size: 25px;
+	cursor: pointer; 
+	}
+
+	
+	nav ul {
+		padding: 30px;
+	}
+	
+	nav ul li .contactus {
+		color: #E55F7F;
+	}
+	
+	.navbar2 .contactus { 
+		border: none;
+	
+	
+	}
+	
+	
+	
+}

@@ -2,10 +2,10 @@
 <html>
 <header>
     <title>Sign Up</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </header>
 <body>
     <nav>	
@@ -43,73 +43,62 @@
             <i class="fa fa-bars" onClick="menuShow()"></i>
         
     </nav>
-    <div class="sign-up-header" style="padding-top: 150px;">
-        <a style="text-decoration: none;" href="#">
-            <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
-        </a>
-        <h1>Create your Pastelitos account</h1>
+    <div>
+        <p style="border: solid #FFDBDD 60px; color: #FFDBDD"> nothing</p>
+
     </div>
+    <div class="page-content" style="padding: 40px 20px 40px 20px; border: #333333 solid 20px; width: 50%; margin: auto; border-radius: 35px;">
+        <div class="sign-up-header">
+            <a style="text-decoration: none;" href="#">
+                <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
+            </a>
+            <h1>Create your Pastelitos account</h1>
+        </div>
 
 
-    <div class="forms">
-        <form id="main-form" action="index.html" method="POST">
-            <label for="name"></label>
-            <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
-            <label for="name"></label>
-            <input type="text" name="lname" id="last-name" class="text-input" placeholder="Last name">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
-            <label for="password"></label>
-            <input type="password" name="psword" id="password" class="text-input" placeholder="Create a password">
+        <div class="forms">
+            <form id="main-form" action="index.html" method="POST">
+                <label for="name"></label>
+                <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
+                <label for="name"></label>
+                <input type="text" name="lname" id="last-name" class="text-input" placeholder="Last name">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
+                <label for="password"></label>
+                <input type="password" name="psword" id="password" class="text-input" placeholder="Create a password">
 
-            <div class="checkbox1">
-                <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
-                <label for="remember-me">Keep me signed in</label>
-            </div>
+                <div class="checkbox1">
+                    <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
+                    <label for="remember-me">Keep me signed in</label>
+                </div>
 
-            <div class="checkbox2">
-                <input type="checkbox" name="send-emails" id="send-emails" class="checkbox">
-                <label for="send-emails">Send me emails about new arrivals, savings & more.</label>
-            </div>
-            <p class="terms1">By clicking Create Account, you acknowledge you have read </p>
-            <p class="terms2">and agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></p>
+                <div class="checkbox2">
+                    <input type="checkbox" name="send-emails" id="send-emails" class="checkbox">
+                    <label for="send-emails">Send me emails about new arrivals, savings & more.</label>
+                </div>
+                <p class="terms1">By clicking Create Account, you acknowledge you have read </p>
+                <p class="terms2">and agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></p>
 
-            <button type="submit" id="create" class="btn">Create Account</button>
+                <button type="submit" id="create" class="btn">Create Account</button>
 
-            <h2>Already have an account?</h2>
+                <h2>Already have an account?</h2>
+                
+                
+                <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
             
-            
-            <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
-           
-        </form>
+            </form>
+        </div>
     </div>
-
     <script language="javascript">
-        $(document).ready (function(){
-            
-            //validation of the sign up form
-            $("#main-form").validate({
-                rules: {
-                    fname: {
-                        required: true
-                    },
-                    lname: {
-                        required: true
-                    },
-                    psword: {
-                        required: true,
-                        minlength: 8
-                    },
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-                }
-
-            });
-        });
+      var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
     </script>
 </body>
 

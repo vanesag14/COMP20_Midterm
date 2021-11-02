@@ -2,10 +2,10 @@
 <html>
 <header>
     <title>Sign In</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </header>
 <body>
     <nav>	
@@ -43,7 +43,11 @@
             <i class="fa fa-bars" onClick="menuShow()"></i>
         
     </nav>
-    <div class="page-content" style="padding-top: 150px;">
+    <div>
+        <p style="border: solid #FFDBDD 110px; color: #FFDBDD"> nothing</p>
+
+    </div>
+    <div class="page-content" style="padding: 40px 20px 40px 20px; border: #333333 solid 20px; width: 50%; margin: auto; border-radius: 35px;">
         <div class="sign-up-header">
             <a style="text-decoration: none;" href="#">
                 <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
@@ -70,22 +74,16 @@
     </div>
     <script language="javascript">
 
-        //validates the form
-        $(document).ready(function() {
-            
-            $("#main-form").validate({
-                rules: {
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-
-                }
-            });
-            
-        });
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	
     </script>
 </body>
 
