@@ -10,7 +10,7 @@
 .navbar {
 	width: 100%;
 	background-size: cover; 
-
+	
 	
 }
 
@@ -195,7 +195,7 @@ footer {
 }
 
 img {
-	padding-top: 20px;
+	/* padding-top: 20px; */
     border-radius: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
