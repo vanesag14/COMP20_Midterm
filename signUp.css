@@ -111,10 +111,13 @@
   
   .dropdown-content a:hover {
       background-color: #FFDADE;
+      border-radius: 20px;
   }
   
   .dropdown:hover .dropdown-content {
       display: block;
+      border-radius: 20px;
+
   }
   
   .dropdown:hover .about {
@@ -143,6 +146,35 @@ body {
     font-size: 20px;
     font-family: 'Mali', cursive;
 }
+
+.dropdown:hover .home {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+	
+}
+
+.dropdown:hover .about {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+
+}
+
+.dropdown:hover .shop {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+}
+
+.dropdown:hover .profile {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+
+}
+
+.dropdown:hover .contactus {
+	border:solid #E55F7f;
+	background: #E55F7F;
+}
+
 
 /* STYLES THE FORMS */
 
