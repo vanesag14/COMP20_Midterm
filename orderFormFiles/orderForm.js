@@ -90,7 +90,6 @@ function validate(event) {
     }
 
     if (err == false) {
-        alert("!!!");
         displayOutput();
     }
 }
@@ -101,7 +100,7 @@ function genTotal() {
         var c1 = $('#cake1 option:selected').val();
 
             if (c1 == "8r") {
-                cakeCost = cakeSizes[0].cost;
+                cakeCost = (Math.round((cakeSizes[0].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -110,7 +109,7 @@ function genTotal() {
             }
 
             if (c1 == "10r") {
-                cakeCost = cakeSizes[1].cost;
+                cakeCost = (Math.round((cakeSizes[1].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -118,7 +117,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "1/4s") {
-                cakeCost = cakeSizes[2].cost;
+                cakeCost = (Math.round((cakeSizes[2].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -126,7 +125,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "1/3s") {
-                cakeCost = cakeSizes[3].cost;
+                cakeCost = (Math.round((cakeSizes[3].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -134,7 +133,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "1/2s") {
-                cakeCost = cakeSizes[4].cost;
+                cakeCost = (Math.round((cakeSizes[4].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -142,7 +141,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "2/3s") {
-                cakeCost = cakeSizes[5].cost;
+                cakeCost = (Math.round((cakeSizes[5].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -150,7 +149,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "3/4s") {
-                cakeCost = cakeSizes[6].cost;
+                cakeCost = (Math.round((cakeSizes[6].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -158,7 +157,7 @@ function genTotal() {
                 $("#total").html("Total: $" + total);
             }
             if (c1 == "fulls") {
-                cakeCost = cakeSizes[7].cost;
+                cakeCost = (Math.round((cakeSizes[7].cost) * 100) / 100).toFixed(2)
                 subtotal = $("#subtotal").html("Subtotal: $" + cakeCost);
                 tax = (Math.round((cakeCost * 0.0625) * 100) / 100).toFixed(2);
                 $("#tax").html("Tax: $" + tax);
@@ -200,20 +199,23 @@ function displayOutput() {
     occasion = ("Your occasion is: " + c2);
 
     iText = $("#inscription").val()
-    if (iText == " ") {
-        inscription = ("No inscription")
+    if (iText == "") {
+        inscription = ("No inscription");
+    } else {
+        inscription = ("Your inscription is: " + iText);
     }
-    inscription = ("Your inscription is: " + iText);
 
-    srText = $("#specialRequests").val()
-    if (srText == " ") {
-        specialRequests == ("No special requests")
+    var srText = document.getElementById("specialRequests").value;
+    if (srText == "") {
+        specialRequests = ("No special requests");
+    } else {
+        specialRequests = ("Your special requests are: " + srText);
     }
-    specialRequests = ("Your special requests are: " + srText);
 
     subtotal = $("#subtotal").text();
     tax = $("#tax").text();
     total = $("#total").text();
+
 
     orderWindow.document.write(ty + "<br> <br>" + order + "<br>" + 
             flavor + "<br>" + size + "<br>" + occasion + "<br>" +

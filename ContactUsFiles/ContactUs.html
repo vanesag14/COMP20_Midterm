@@ -10,13 +10,15 @@
 	        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="ContactUs.css"/>
         </head>
         <header class= "navbar">
             <nav>	
                 <!-- logo -->
-                <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+                <a href="../index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
                     
                 
                     <div class="navbar2" id="navbar2">
@@ -25,22 +27,22 @@
                         <i class="fa fa-times" onClick="menuHide()"></i>
                         
                         <ul> 
-                        <li><a href="index.html">  HOME </a></li>
+                        <li><a href="../index.html">  HOME </a></li>
                         
                         <div class="dropdown"> 	
-                            <li class="shop"><a href="products.html">SHOP</a></li>
+                            <li class="shop"><a href="../productPage1.html">SHOP</a></li>
                             <div class="dropdown-content">
-                                 <a href="#" class="order">ORDER FORM</a>
+                                 <a href="../orderFormFiles/orderForm.html" class="order">ORDER FORM</a>
                              </div>
                         </div>
                         
                         <div class="dropdown"> 
-                            <li class="about"><a href="aboutUs.html">ABOUT</a></li>
+                            <li class="about"><a href="../aboutus2.html">ABOUT</a></li>
                              <div class="dropdown-content">
                                  <a href="#">HISTORY</a>
                              </div>
                             </div>
-                        <li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                        <li><a href="../signIn.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
                         <li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
                             
                         </ul>
@@ -58,26 +60,24 @@
                     <h1> Contact Pastelitos </h1>
                     <h2> Submit the form with any questions, comments, <br> or concerns. </h2>
                     
-                    <form>
-                      <input type="text" id="name" name="firstname" placeholder="FULL NAME">
+                    <form name = "formData" onsubmit="return validate(event)">
+                      <input type="text" id="name" name="name" placeholder="FULL NAME*">
                   
-                      <input type="text" id="email" name="email" placeholder="EMAIL">
+                      <input type="text" id="email" name="email" placeholder="EMAIL*">
                         
                       <select id="topic" name="topic"> 
-                        <option value="" disabled selected>TOPIC</option>
+                        <option value="" id="noTopic" disabled selected>TOPIC*</option>
                         <option value="question">QUESTION</option>
                         <option value="comment">COMMENT</option>
                         <option value="concern">CONCERN</option>
                       </select>
                   
-                      <textarea id="message" name="message" placeholder="MESSAGE" style="height:200px"></textarea>
+                      <textarea id="message" name="message" placeholder="MESSAGE*" style="height:200px"></textarea>
                   
                       <input type="submit" value="SUBMIT">
                     </form> 
                   </div>
                <div class = "flex-child-col2">
-
-                
                    <div class = "contactbox">
                        <div class = "contactbox-header"> 
                             <strong> Pastelitos  </strong> <br> <br>
@@ -95,7 +95,7 @@
                     </div>
     
                     <div class = "customcake-button">
-                        <input type="submit" value="START MY ORDER">
+                        <input type="submit" value="START MY ORDER" onclick= "location.href = '../orderFormFiles/orderForm.html';">
                     </div> 
                 </div>
             
@@ -104,5 +104,7 @@
         <footer>
             <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
           </footer>
+    
+          <script type="text/javascript" src = "ContactUs.js"> </script>
     </body>   
 </html>
