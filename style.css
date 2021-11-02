@@ -9,10 +9,7 @@
 
 
 /* Navigation Bar */
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
+
 
 .navbar {
 	
@@ -45,7 +42,7 @@ nav .navbar2 {
 	
 	flex: 1;
 	text-align: right;
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 550;
 	position: relative;
   	display: inline-block;
@@ -61,10 +58,8 @@ nav ul li {
 }
 
 nav ul li a{
-	
 	text-decoration: none;
 	color: #E55F7f;
-
 }
 
 nav .fa {
@@ -137,22 +132,22 @@ nav .fas {
 /* Page Content*/
 
 body h1{
-	font-family:giulia; 
+	 font-family: 'Mali', cursive; 
 }
 
 body h2 {
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 20px;
 }
 
 body h3{
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 18px;
 }
 
 
 body p {
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 15px;
 }
 
@@ -167,16 +162,15 @@ body p {
 }
 
 .container1 .box-1 h1 {
-	font-family:giulia; 
+	font-family: 'Mali', cursive; 
 	font-size: 100px;
 	color: #E55F7F
 }
 
 .container1 .box-1 p {
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 850;
 	font-size: 18px;
-
 }
 
 
@@ -228,12 +222,7 @@ body p {
 	
 	.navbar2 .contactus { 
 		border: none;
-	
-	
 	}
-	
-	
-	
 }
 
 
@@ -244,7 +233,7 @@ body p {
 	font-size: 35px;
 	text-align: center;
 	padding: 30px;
-	background: #FCFCFC;
+	background: #FFFFFF;
 	border: solid #fff 18px;
 }
 
@@ -257,14 +246,14 @@ body p {
 .container2 .box-2 h1{
 	
 	padding: 20px;
-	font-family: giulia;
+	font-family: 'Mali', cursive;
 	color: #333334;
 	
 	
 }
 
 .container2 .box-2 h2 {
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 20px;
 	color: #333334;
 	padding: 20px;
@@ -296,10 +285,11 @@ body p {
 }
 .cake-col h4 {
  	font-size: 15px;
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 .cake-col p {
 	padding: 0px 20px 15px 20px;
+	font-size: 15px;
 }
 
 
@@ -324,7 +314,7 @@ body p {
 }
 
 .container3 .box-3 h1 {
-	font-family:giulia; 
+	font-family: 'Mali', cursive; 
 	font-size: 45px;
 	color: #E55F7F;
 	text-align: center;
@@ -351,7 +341,7 @@ body p {
 
 .review-col h4 {
  	font-size: 15px;
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 
@@ -376,14 +366,14 @@ body p {
 		flex-direction: column;
 	}
 	
-	footer p {
+	#FCFCFC p {
 		font-size: 10px;
 	}
 }
 
 footer {
 	
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	position:fixed;
 	left:0px;
 	bottom:0px;

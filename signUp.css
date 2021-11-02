@@ -140,7 +140,8 @@ body {
 }
 
 .sign-up-header h1 {
-    font-size: 1.5em;
+    font-size: 20px;
+    font-family: 'Mali', cursive;
 }
 
 /* STYLES THE FORMS */
@@ -190,19 +191,22 @@ input.checkbox{
 
 .forms .checkbox1 label {
     font-weight: 600;
-    font-size: .9em;
+    font-size: .82em;
     color:#3a3332;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .forms .checkbox2 label {
-    font-size: .89em;
+    font-size: .84em;
     color: rgb(93, 93, 93);
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .forms .terms1,
 .forms .terms2 {
-    font-size: .85em;
+    font-size: .8em;
     color: rgb(93, 93, 93);
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .forms .terms2 {
@@ -217,6 +221,35 @@ input.checkbox{
     background-color: #3A3332;
     border-radius: 20px;
     color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.forms .btn:hover{
+    border:solid #E55F7f 2px;
+	background: #E55F7F;
+    color: white;
+}
+
+#sign-in.btn.signin {
+    background-color: #3A3332; 
+    border: #3A3332 solid 1px; 
+    padding-left: 12%; 
+    padding-right: 12%; 
+    color: white;
+}
+
+#create.btn.signin {
+    background-color: white; 
+    border: #3A3332 solid 1px; 
+    padding-right: 9%; 
+    padding-left: 9%; 
+    color: #3A3332;
+}
+
+#create.btn.signin:hover {
+	background: #E55F7F;
+    border:solid #E55F7f 1px;
+    color: white;
 }
 
 .forms #sign-in {
@@ -225,6 +258,12 @@ input.checkbox{
     padding-right: 12%;
     padding-left: 12%;
     color: #3A3332;
+    font-size: .9em;
+}
+.forms #sign-in:hover {
+    border:solid #E55F7f 1px;
+	background: #E55F7F;
+    color: white;
 }
 
 
@@ -233,12 +272,39 @@ input.checkbox{
     margin-bottom: 15px;
     color:#3a3332;
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: .9em;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.placeholderred::-webkit-input-placeholder {
+    color: red;
+}
+.placeholderred:-moz-placeholder { /* Firefox 18- */
+    color: red;  
+}
+.placeholderred::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+.placeholderred:-ms-input-placeholder {  
+    color: red;  
+ }
 
 .terms2 a {
     color: rgb(240, 151, 196);
+}
+
+footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:20px;
+    width:100%;
+    background:#242424;
+    color:#EDEDED;
+    padding: 7px 20px;
+    letter-spacing: 3px;
+    font-size: 11.5px;
 }
 
 @media (max-width: 700px) {

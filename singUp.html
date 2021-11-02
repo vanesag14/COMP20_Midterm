@@ -5,6 +5,9 @@
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
 
 </header>
 <body>
@@ -24,7 +27,7 @@
                 <div class="dropdown"> 	
                     <li class="shop"><a href="products.html">SHOP</a></li>
                     <div class="dropdown-content">
-                         <a href="#" class="order">ORDER FORM</a>
+                         <a href="orderFormFiles/orderForm.html" class="order">ORDER FORM</a>
                      </div>
                 </div>
                 
@@ -49,7 +52,7 @@
     </div>
     <div class="page-content" style="padding: 40px 20px 40px 20px; border: #333333 solid 20px; width: 50%; margin: auto; border-radius: 35px;">
         <div class="sign-up-header">
-            <a style="text-decoration: none;" href="#">
+            <a style="text-decoration: none;" href="index.html">
                 <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
             </a>
             <h1>Create your Pastelitos account</h1>
@@ -57,7 +60,7 @@
 
 
         <div class="forms">
-            <form id="main-form" action="index.html" method="POST">
+            <form id="main-form" action="index.html" name="formData" onsubmit="return validate(event)">
                 <label for="name"></label>
                 <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
                 <label for="name"></label>
@@ -77,18 +80,22 @@
                     <label for="send-emails">Send me emails about new arrivals, savings & more.</label>
                 </div>
                 <p class="terms1">By clicking Create Account, you acknowledge you have read </p>
-                <p class="terms2">and agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></p>
+                <p class="terms2">and agreed to our <a href="terms.html">Terms of use</a> and <a href="privacy.html">Privacy Policy</a></p></p>
 
-                <button type="submit" id="create" class="btn">Create Account</button>
+                <button type="submit" id="create" class="btn" >Create Account</button>
 
                 <h2>Already have an account?</h2>
                 
                 
-                <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
+                <button type="button" id="sign-in" class="btn" value="sign in" onclick="clicked()">Sign in</button>
             
             </form>
         </div>
     </div>
+
+    <footer>
+        <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
+    </footer>
     <script language="javascript">
       var navbar2 = document.getElementById('navbar2');
 		
@@ -99,6 +106,48 @@
 		function menuHide() {
 			navbar2.style.right= "-200px";
 		}
+
+        function validate(event) {
+            event.preventDefault();
+            reload = true
+            with(document.formData) {
+                if (fname.value == "") {
+                    fname.placeholder = "ENTER FIRST NAME"
+                    var element = document.getElementById("first-name");
+                    element.classList.add("placeholderred");
+                    reload = false
+                }
+                
+                if (lname.value == "") {
+                    lname.placeholder = "ENTER LAST NAME"
+                    var element = document.getElementById("last-name");
+                    element.classList.add("placeholderred");
+                    reload = false
+                }
+
+                if (email.value == "") {
+                    email.placeholder = "ENTER EMAIL"
+                    var element = document.getElementById("email");
+                    element.classList.add("placeholderred");
+                    reload = false
+                }
+
+                if (psword.value == "") {
+                    psword.placeholder = "ENTER PASSWORD"
+                    var element = document.getElementById("password");
+                    element.classList.add("placeholderred");
+                    reload = false
+                }
+            }
+            if (reload) {
+                location.reload();
+            }
+            
+        }
+
+        function clicked() {
+            window.location.href = "signIn.html"
+        }
     </script>
 </body>
 
