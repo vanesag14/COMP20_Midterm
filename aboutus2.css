@@ -38,8 +38,8 @@
 	  
 	  flex: 1;
 	  text-align: right;
-	  font-family: "IBM Plex Sans";
-	  font-weight: 550;
+	  font-family: 'IBM Plex Sans', sans-serif;
+	  /* font-weight: 550; */
 	  position: relative;
 		display: inline-block;
 	  
@@ -125,7 +125,7 @@
   }
 
 footer {
-	font-family: "IBM Plex Sans";
+	font-family: 'IBM Plex Sans', sans-serif;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -167,7 +167,7 @@ footer {
 }
 
 .top p {
-	font-family: "Actor";
+	font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
 	padding-left: 45px;
 	padding-right:45px;
@@ -191,12 +191,12 @@ img {
 
 .col2 .card .text p.a {
 	font-style: oblique; 
-	font-family: "Actor";
+	font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
 }
 
 .col2 .card .text p {
-	font-family: "Actor";
+	font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
 }
 
@@ -207,12 +207,12 @@ img {
 
 .col1 .card .text p.a {
 	font-style: oblique; 
-	font-family: "Actor";
+	font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
 }
 
 .col1 .card .text p {
-	font-family: "Actor";
+	font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
 }
 
@@ -221,7 +221,7 @@ img {
 }
 
 h3 {
-	font-family: Giulia-Regular;
+	font-family: 'Mali', cursive;
 	color: #E55F7f;
 	font-weight: 550;
 	text-align: center;
@@ -229,18 +229,26 @@ h3 {
 }
 
 h1 {
-	font-family: Giulia-Regular;
+	font-family: 'Mali', cursive;
+	font-size: 50px;
 	color: #E55F7f;
 }
 
 h2 {
-	font-family: Giulia-Regular;
+	font-family: 'Mali', cursive;
 	color: #E55F7f;
 }
 
-.text p {
-    font-family: "IBM Plex Sans";
-	font-weight: 550;
+.top p {
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* font-weight: 550; */
+}
+
+p {
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 @font-face {
