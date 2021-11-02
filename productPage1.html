@@ -4,6 +4,7 @@
     <title>Catalog</title>
     <meta charset="UTF-8"> 
     <meta name='viewport' content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="productPage.css"/>
 </head>
 <body style="background-color: #ffdbdd;">
@@ -19,7 +20,7 @@
 					<i class="fa fa-times" onClick="menuHide()"></i>
 					
 					<ul> 
-					<li><a href="index.html">  HOME </a></li>
+					<li><a href="index.html">HOME</a></li>
 					
 					<div class="dropdown"> 	
 						<li class="shop"><a href="productPage1.html">SHOP</a></li>
@@ -51,12 +52,12 @@
         <!-- buttons section -->
         <div class="menu-selection">
             <ul>
-                <a href="http://vanesag14.github.io/COMP20_Midterm/productPage1.html#target1"><li>CAKES</li></a>
-                <a href="http:/vanesag14.github.io/COMP20_Midterm/productPage1.html#target2" > <li>PASTRIES</li></a>
-                <a href="http://vanesag14.github.io/COMP20_Midterm/productPage1.html#target3" class="last-item"><li>DRINKS</li></a>
+                <a href="#target1"><li>CAKES</li></a>
+                <a href="#target2" > <li>PASTRIES</li></a>
+                <a href="#target3" class="last-item"><li>DRINKS</li></a>
             </ul>
         </div>
-        <h2><a id="target1">Cakes</a></h2> 
+        <h2 id="target1">Cakes</h2> 
         <!-- cakes section -->
         <div class="cakes">
             <!-- first cake -->
@@ -93,7 +94,7 @@
         <!-- first cake -->
         <div class="card">
             <div class="image">
-               <img src="https://lh3.googleusercontent.com/wqdBMwzESaYsDfVwCQHeeXciERdZJBCCPPiN5bMm5rgAeisTvUQMAq2ARMv0mep3i5gb0QdGHRh4alFxZPcXKA8O7K81NcUH6UvwVKAZRb-eRe2V5Rbyb0DuP23lvo_iNFMdIWcCJA=w2400" alt="cake"/>
+               <img src="./pictures/choc.jpg" alt="cake"/>
            </div>
            <div class="text">
                <h3 class="title">Dark Sweet Treat</h3>
@@ -103,7 +104,7 @@
        
        <div class="card">
            <div class="image">
-              <img src="https://lh3.googleusercontent.com/k_Y6DwVRappZ5nfMFTwxMFty6sTX_cJZXHBCxcnuWhQykJqj0fbXUH4TkDEKwZur9eMkHcwQFXCEZobpF-yHA6Xf_9U5X5z7W70z3QltwCx9-H94e3q4wYwDHM6h00YnKSq4mYwc9Q=w2400" alt="cake"/>
+              <img src="./pictures/mac.jpg" alt="cake"/>
           </div>
           <div class="text">
               <h3 class="title">Macaroon Dulce Delight</h3>
@@ -113,7 +114,7 @@
 
       <div class="card">
        <div class="image">
-          <img src="https://lh3.googleusercontent.com/MjygoI0Wmf5SFsREaXq7pdvISOLtELIuR-phNse2zUMAlS_0qkiz6A4L97f8INaIfyaRQgGIqmBq7bNbYhZy-NuAj0gGflHSOa7hO7MbsxikI-2mi9km9rctr-13DYbOkQaZMxGrRA=w2400" alt="cake"/>
+          <img src="./pictures/flo.jpg" alt="cake"/>
       </div>
       <div class="text">
           <h3 class="title">Decorative Boda cake</h3>
@@ -123,13 +124,13 @@
 
         </div>
 
-        <h2><a id="target2">Pastries</a></h2> 
+        <h2 id="target2">Pastries</h2> 
         <!-- pastries seciton -->
         <div class="pastries">
             <!-- first pastries -->
             <div class="card">
                 <div class="image">
-                   <img src="./pictures/cookie.jpeg" alt="cake"/>
+                   <img src="./pictures/cookies.jpeg" alt="cake"/>
                </div>
                <div class="text">
                    <h3 class="title">Chocate Chip Cookies</h3>
@@ -160,7 +161,7 @@
 
         </div>
 
-        <h2><a id="target3">Drink</a></h2> 
+        <h2 id="target3">Drink</h2> 
         <!-- drinks section -->
         <div class="drinks">
             <!-- first drink -->
@@ -197,6 +198,19 @@
     <footer>
         <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
       </footer>
+
+      <script language="javascript"> 
+		
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	</script>
 
 </body>
 </html>
