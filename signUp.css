@@ -276,6 +276,18 @@ input.checkbox{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.placeholderred::-webkit-input-placeholder {
+    color: red;
+}
+.placeholderred:-moz-placeholder { /* Firefox 18- */
+    color: red;  
+}
+.placeholderred::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+.placeholderred:-ms-input-placeholder {  
+    color: red;  
+ }
 
 .terms2 a {
     color: rgb(240, 151, 196);
