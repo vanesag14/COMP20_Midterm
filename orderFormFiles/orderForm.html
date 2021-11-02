@@ -5,13 +5,15 @@
             <title> Order Form </title>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">  
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
+            <link rel="shortcut icon" type="image/jpg" href="../mini-logo.png"/>  
 
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="keywords" content="cakes, pastries, small business, bakery, pastry shop, local business, coffee, Boston">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
             <link rel="stylesheet" href="orderForm.css"/>
             		<!-- include jquery -->
@@ -21,7 +23,7 @@
         </head>
         <nav>	
 			<!-- logo -->
-			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+			<a href="../index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
 				
 			
 				<div class="navbar2" id="navbar2">
@@ -30,23 +32,23 @@
 					<i class="fa fa-times" onClick="menuHide()"></i>
 					
 					<ul> 
-					<li><a href="index.html">  HOME </a></li>
+					<li><a href="../index.html">  HOME </a></li>
 					
 					<div class="dropdown"> 	
-						<li class="shop"><a href="products.html">SHOP</a></li>
+						<li class="shop"><a href="../productPage1.html">SHOP</a></li>
 						<div class="dropdown-content">
-							 <a href="#" class="order">ORDER FORM</a>
+							 <a href="orderForm.html" class="order">ORDER FORM</a>
 						 </div>
 					</div>
 					
 					<div class="dropdown"> 
-						<li class="about"><a href="aboutUs.html">ABOUT</a></li>
+						<li class="about"><a href="../aboutus2.html">ABOUT</a></li>
 						 <div class="dropdown-content">
 							 <a href="#">HISTORY</a>
 						 </div>
 						</div>
-					<li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
-					<li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+					<li><a href="../signIn.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+					<li class="contactus"><a href="../ContactUsFiles/ContactUs.html" style="color: white;">CONTACT US</a></li>
 						
 					</ul>
 				</div>	
@@ -65,7 +67,7 @@
 
             <div class = "cakeOrderForm">
                 <div class = "formContainer">
-                <form class = "formElements" name = formData onsubmit="return validate(event)">
+                <form class = "formElements" name = "formData" onsubmit="return validate(event)">
                     <div class = "pInfo">
                         <h2 id = "formHeader"> Personal Info </h2>
 
@@ -74,7 +76,7 @@
                             <input type="text" id="email" name="email" placeholder="EMAIL*">
                             <input type="text" id="pNum" name="pNum" placeholder="PHONE NUMBER*">
                             <input type="text" id="al1" name="al1" placeholder="ADDRESS LINE 1*">
-                            <input type="text" id="al2" name="al2" placeholder="ADDRESS LINE 2*">
+                            <input type="text" id="al2" name="al2" placeholder="ADDRESS LINE 2">
                             <input type="text" id="city" name="city" placeholder="CITY*">
                             <select name="state" id="state">
                                 <option id = "emptyState" value="" disabled selected="disabled">STATE/PROVINCE*</option>
@@ -146,7 +148,7 @@
                     </div>
 
                     <div class = "buildCake">
-                        <h2 id = formHeader> Build Your Cake </h2>
+                        <h2 id = "formHeader2"> Build Your Cake </h2>
 
                             <select id="cake0" name="cFlavor"> 
                                 <option id = "d1" value=""  disabled selected="selected">CAKE FLAVOR*</option>
@@ -187,7 +189,7 @@
 
                                 <textarea id="specialRequests" name="specialRequests" placeholder="SPECIAL REQUESTS" style="height:200px"></textarea>
 
-                            <div class = totalBox>
+                            <div class = "totalBox">
                                 <div id = "subtotal" value = "0"> Subtotal: $0</div>
                                 <div id = "tax" value = "0"> Tax: $0</div>
                                 <div id = "total" value = "0"> Total: $0</div>
