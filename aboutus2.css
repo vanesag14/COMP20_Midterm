@@ -7,10 +7,10 @@
 }
 
 /* Navigation Bar */
-.navbar-fixed-top.scrolled {
+/* .navbar-fixed-top.scrolled {
 	background-color: #fff !important;
 	transition: background-color 200ms linear;
-  }
+  } */
   
   .navbar {
 	  width: 100%;
@@ -26,9 +26,7 @@
 	  justify-content: space-between;
 	  align-items: center;
 	  background: rgba(255,214,220,0.80);
-	  position: fixed;
-  
-	  
+	  position: fixed;	  
   }
   
   
@@ -125,37 +123,6 @@
   .dropdown:hover .shop {
 	  background-color: #FFFFFF;
   }
-/* nav {
-    background-color: #ffdbdd;
-	display: flex;
-	padding: 2% 6%;
-	justify-content: space-between;
-	align-items: center;
-}
-nav img {
-	width: 250px;
-}
-
-nav .navbar2 {
-	flex: 1;
-	text-align: right;
-	font-family: "Actor";
-	font-weight: 550;
-}
-
-nav ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 8px 12px;
-	position: relative;
-	
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #E55F7f;
-
-} */
 
 footer {
 	font-family: "IBM Plex Sans";
