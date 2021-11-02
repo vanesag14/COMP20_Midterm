@@ -3,47 +3,72 @@
     <body>
         <head>
             <title> Order Form </title>
-            <link rel = "stylesheet" type = "text/css" href="https://fonts.googleapis.com/css2?family=Actor&display=swap"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">  
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
             <link rel="stylesheet" href="orderForm.css"/>
             		<!-- include jquery -->
             <script src="https://code.jquery.com/jquery-3.6.0.js" 
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
             crossorigin="anonymous"></script>
         </head>
-    <header class= "navbar">
-		<nav>	
+        <nav>	
 			<!-- logo -->
 			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
 				
-			<ul> 
-				<div class="navbar2"> 
-					<li><a href="index.html">  HOME </a></li> 
-					<li><a href="shop.html">SHOP</a></li> 
-					<li><a href="about.html">ABOUT</a></li>
-					<li style="border:solid #3A3332; border-radius: 20px; padding-right: 18px; padding-left: 18px; background: #3A3332; color: #fff;"><a href="contact.html" >CONTACT US</a></li>
-				</div>	
-			</ul>
 			
-		</nav>	
-	</header>
+				<div class="navbar2" id="navbar2">
+					
+						
+					<i class="fa fa-times" onClick="menuHide()"></i>
+					
+					<ul> 
+					<li><a href="index.html">  HOME </a></li>
+					
+					<div class="dropdown"> 	
+						<li class="shop"><a href="products.html">SHOP</a></li>
+						<div class="dropdown-content">
+							 <a href="#" class="order">ORDER FORM</a>
+						 </div>
+					</div>
+					
+					<div class="dropdown"> 
+						<li class="about"><a href="aboutUs.html">ABOUT</a></li>
+						 <div class="dropdown-content">
+							 <a href="#">HISTORY</a>
+						 </div>
+						</div>
+					<li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+					<li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+						
+					</ul>
+				</div>	
+				<i class="fa fa-bars" onClick="menuShow()"></i>
+			
+		</nav>
 
     <div class = "underNav"> 
-
                 <img class = "imgContainer" src = "orderFormImg.jpg">
-            <div class = "header"> Pastelitos' Cake Order Form </div>
-            <p id = "p1"> Thank you for choosing Pastelitos for your custom cake order. If you have special <br>
+            <h1 class = "header"> Pastelitos' Cake Order Form </h1>
+            <h2 id = "p1"> Thank you for choosing Pastelitos for your custom cake order. If you have special <br>
                 requests that aren’t included in the standard order form choices, please note <br>
-                 that in the <strong> Special Requests</strong> section. We’ll call you and confirm the request with you. </p>
+                 that in the <i> Special Requests</i> section. We’ll call you and confirm the request with you. </h2>
 
-            <p id = "p2"> <strong> Please submit your order at least 10 days prior to the date you need your order completed by </strong></p>
+            <p id = "p2"> <i> Please submit your order at least 10 days prior to the date you need your order completed by </i></p>
 
             <div class = "cakeOrderForm">
                 <div class = "formContainer">
+                <form class = "formElements" name = formData onsubmit="return validate(event)">
                     <div class = "pInfo">
                         <h2 id = "formHeader"> Personal Info </h2>
 
-                        <form class = "formElements" name = formData onsubmit="return false;">
                             <input type="text" id="userName" name="userName" placeholder="YOUR FULL NAME*">
                             <input type="text" id="rName" name="rName" placeholder="RECIPIENT'S NAME">
                             <input type="text" id="email" name="email" placeholder="EMAIL*">
@@ -117,47 +142,45 @@
                                 <input type="radio" id="pNumOption" name="contact">
                                 <label for="pNumOption">PHONE</label><br>  
                             </div>
-                        </form>
 
                     </div>
 
                     <div class = "buildCake">
                         <h2 id = formHeader> Build Your Cake </h2>
-                        <form class = "formElements" name = formData onsubmit="return false;">
 
-                            <select id="cake1" name="cFlavor"> 
+                            <select id="cake0" name="cFlavor"> 
                                 <option id = "d1" value=""  disabled selected="selected">CAKE FLAVOR*</option>
-                                <option value="chocolate">CHOCOLATE</option>
-                                <option value="vanilla">VANILLA</option>
-                                <option value="marble">MARBLE</option>
-                                <option value="cheesecake">CHEESECAKE</option>
-                                <option value="rVelvet">RED VELVET</option>
-                                <option value="carrot">CARROT</option>
-                                <option value="lemon">LEMON</option>
+                                <option value="chocolate" name="Chocolate">CHOCOLATE</option>
+                                <option value="vanilla" name = "Vanilla">VANILLA</option>
+                                <option value="marble" name = "Marble">MARBLE</option>
+                                <option value="cheesecake" name = "Cheesecake">CHEESECAKE</option>
+                                <option value="rVelvet" name = "Red Velvet">RED VELVET</option>
+                                <option value="carrot" name = "Carrot">CARROT</option>
+                                <option value="lemon" name = "Lemon">LEMON</option>
                             </select>
 
-                            <select id="cake2" name="cSize"> 
+                            <select id="cake1" name="cSize"> 
                                 <option id = "d2" value=""  disabled selected="selected">CAKE SIZE*</option>
-                                <option value="8r">8 INCH ROUND (12 servings)</option>
-                                <option value="10r">10 INCH ROUND (18 servings)</option>
-                                <option value="1/4s">1/4 SHEET (25 servings)</option>
-                                <option value="1/3s">1/3 SHEET (35 servings)</option>
-                                <option value="1/2s">1/2 SHEET (50 servings)</option>
-                                <option value="2/3s">2/3 SHEET (65 servings)</option>
-                                <option value="3/4s">3/4 SHEET (75 servings)</option>
-                                <option value="fulls">FULL SHEET (100 servings)</option>
+                                <option value="8r" name = "8 inch Round">8 INCH ROUND (12 serv.) + $45</option>
+                                <option value="10r" name = "10 inch Round">10 INCH ROUND (18 serv.) +$55</option>
+                                <option value="1/4s" name = "1/4 Sheet">1/4 SHEET (25 serv.) + $65</option>
+                                <option value="1/3s" name = "1/3 Sheet">1/3 SHEET (35 serv.) + $80</option>
+                                <option value="1/2s" name = "1/2 Sheet">1/2 SHEET (50 serv.) + $100</option>
+                                <option value="2/3s" name = "2/3 Sheet">2/3 SHEET (65 serv.) + $150</option>
+                                <option value="3/4s" name = "3/4 Sheet">3/4 SHEET (75 serv.) + $170</option>
+                                <option value="fulls" name = "Full Sheet">FULL SHEET (100 serv.) + $200</option>
                             </select>
 
-                            <select id="cake3" name="occasion"> 
+                            <select id="cake2" name="occasion"> 
                                 <option id = "d3" value="" disabled selected>OCCASION*</option>
-                                <option value="8r">BIRTHDAY</option>
-                                <option value="10r">ANNIVERSARY</option>
-                                <option value="1/4s">GRADUATION</option>
-                                <option value="1/3s">BRIDAL SHOWER</option>
-                                <option value="1/2s">RELIGIOUS OCCASION</option>
-                                <option value="2/3s">WEDDING (+%20)</option>
-                                <option value="3/4s">ENGAGEMENT (+%20)</option>
-                                <option value="fulls">JUST BECAUSE</option>
+                                <option value="birthday" name = "Birthday">BIRTHDAY</option>
+                                <option value="anniversary" name = "Anniversary">ANNIVERSARY</option>
+                                <option value="graduation" name = "Graduation">GRADUATION</option>
+                                <option value="bridalShower" name = "Bridal Shower">BRIDAL SHOWER</option>
+                                <option value="religiousOccasion" name = "Religious Occasion">RELIGIOUS OCCASION</option>
+                                <option value="wedding" name = "Wedding">WEDDING (+%20)</option>
+                                <option value="engagement" name = "Engagement">ENGAGEMENT (+%20)</option>
+                                <option value="justBecause" name = "Just Because">JUST BECAUSE</option>
                             </select>
 
                             <input type="text" id="inscription" name="inscription" placeholder="INSCRIPTION">
@@ -165,15 +188,16 @@
                                 <textarea id="specialRequests" name="specialRequests" placeholder="SPECIAL REQUESTS" style="height:200px"></textarea>
 
                             <div class = totalBox>
-                                <div id = "totalTitle"> Total: </div>
-                                <div id = "total" value = "0">$0</div>
+                                <div id = "subtotal" value = "0"> Subtotal: $0</div>
+                                <div id = "tax" value = "0"> Tax: $0</div>
+                                <div id = "total" value = "0"> Total: $0</div>
 
                             </div>
-                        </form>
+                        
                     </div>
-                    <input name = "button" type="button" value="SUBMIT"> 
+                    <input name = "button" type="submit" value="SUBMIT"> 
                 </div>
-
+                </form>
             </div>
     </div>
     
@@ -184,6 +208,19 @@
 	</footer>
 
     <script type="text/javascript" src = "orderForm.js"> </script>
+    <script language="javascript"> 
+		
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	
+	</script>
 
 </body>
 </html>

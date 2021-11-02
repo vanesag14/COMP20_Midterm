@@ -2,45 +2,54 @@
     <body>
         <head>
             <title> Contact Us </title>
-            <link rel = "stylesheet" type = "text/css" href="https://fonts.googleapis.com/css2?family=Actor&display=swap"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">          
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+	        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="ContactUs.css"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         </head>
-        <nav>	
-			<!-- logo -->
-			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
-				
-			
-				<div class="navbar2" id="navbar2">
-					
-						
-					<i class="fa fa-times" onClick="menuHide()"></i>
-					
-					<ul> 
-					<li><a href="index.html">  HOME </a></li>
-					
-					<div class="dropdown"> 	
-						<li class="shop"><a href="products.html">SHOP</a></li>
-						<div class="dropdown-content">
-							 <a href="#" class="order">ORDER FORM</a>
-						 </div>
-					</div>
-					
-					<div class="dropdown"> 
-						<li class="about"><a href="aboutUs.html">ABOUT</a></li>
-						 <div class="dropdown-content">
-							 <a href="#">HISTORY</a>
-						 </div>
-						</div>
-					<li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
-					<li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
-						
-					</ul>
-				</div>	
-				<i class="fa fa-bars" onClick="menuShow()"></i>
-			
-		</nav>
+        <header class= "navbar">
+            <nav>	
+                <!-- logo -->
+                <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+                    
+                
+                    <div class="navbar2" id="navbar2">
+                        
+                            
+                        <i class="fa fa-times" onClick="menuHide()"></i>
+                        
+                        <ul> 
+                        <li><a href="index.html">  HOME </a></li>
+                        
+                        <div class="dropdown"> 	
+                            <li class="shop"><a href="products.html">SHOP</a></li>
+                            <div class="dropdown-content">
+                                 <a href="#" class="order">ORDER FORM</a>
+                             </div>
+                        </div>
+                        
+                        <div class="dropdown"> 
+                            <li class="about"><a href="aboutUs.html">ABOUT</a></li>
+                             <div class="dropdown-content">
+                                 <a href="#">HISTORY</a>
+                             </div>
+                            </div>
+                        <li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                        <li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+                            
+                        </ul>
+                    </div>	
+                    <i class="fa fa-bars" onClick="menuShow()"></i>
+                
+            </nav>
+    
+        </header>
 
         
         <div class = "undernav">
@@ -95,18 +104,5 @@
         <footer>
             <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
           </footer>
-
-    <script language="javascript"> 
-        var navbar2 = document.getElementById('navbar2');
-        
-        function menuShow() {
-            navbar2.style.right= "0";
-        }
-        
-        function menuHide() {
-            navbar2.style.right= "-200px";
-        }
-    </script>
-
     </body>   
 </html>

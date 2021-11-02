@@ -4,7 +4,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 input.placeholderred::-webkit-input-placeholder {
@@ -23,54 +23,182 @@ input.placeholderred::-webkit-input-placeholder {
     color: red;  
  }
 
+ /* Navigation Bar */
 
 
-/* NEED TO FIX HEADER ASK VANNESSA: TEXT MOVES SLIGHTLY DOWN AS YOU
-EXPAND THE SCREEN*/
 .navbar {
-    height: 120px;
-    width: 100%;
-    position: fixed;
-    display: inline-block;
-    z-index: 3;
+	width: 100%; 
+	background-size: cover; 
 }
 
 nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+	width: 88%;
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255,214,220,0.80);
+	position: fixed;
 }
 
+
 nav img {
-    width: 250px; /*Logo + Title size */
+	width: 250px; /*Logo + Title size */
 }
 
 nav .navbar2 {
-    flex: 1;
-    text-align: right;
-    font-family: "IBM Plex Sans";
-    font-weight: 550;
+	
+	flex: 1;
+	text-align: right;
+    font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 550;
+	position: relative;
+  	display: inline-block;
+	
 }
 
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: #e65c7d;
+	
+	text-decoration: none;
+	color: #E55F7f;
+
 }
 
+nav .fa {
+	display: none;
+}
+
+nav .fas {
+	display: none;
+}
+
+.navbar2 .contactus {
+	
+		border:solid #333333; 
+		border-radius: 20px; 
+		padding-right: 18px; 
+		padding-left: 18px; 
+		background: #333; 
+		color: #fff !important; 
+}
+
+
+
+/* Dropdown menu on Navbar */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFF0F1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .order {
+	min-width: 105px;
+}
+
+.dropdown-content a {
+  color: #E55F7F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #FFDADE;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .about {
+	background-color: #FFFFFF;
+
+}
+
+.dropdown:hover .shop {
+	background-color: #FFFFFF;
+}
+
+
+@media (max-width: 700px) {
+	
+	.container1 .box-1 h1 {
+		font-size: 50px;
+	}
+	
+	.container1 .box-1 p {
+		font-size: 20px;
+	}
+	.container2 .box-2 {
+		font-size: 30px;
+	}
+
+    
+	
+	nav ul li {
+		display: block;
+	}
+	
+	nav .navbar2 {
+		position: absolute;
+		background: #fff;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		transition: 0.75s;
+	}
+	
+	
+	nav .fa {
+	display: block;
+	color: #333333;
+	margin: 15px;
+	font-size: 25px;
+	cursor: pointer; 
+	}
+
+	
+	nav ul {
+		padding: 30px;
+	}
+	
+	nav ul li .contactus {
+		color: #E55F7F;
+	}
+	
+	.navbar2 .contactus { 
+		border: none;
+    }
+		
+}
+
+
+
 footer {
-    font-family: "IBM Plex Sans";
+    font-family: 'IBM Plex Sans', sans-serif;
     position:fixed;
     left:0px;
     bottom:0px;
-    height:30px;
+    height:20px;
     width:100%;
     background:#3A3332;
     color:#EDEDED;
@@ -93,46 +221,40 @@ footer {
     width: 100%;
     font-size: 50px;
     color: #E55F7f;
-    font-family: Giulia-Regular;
+    font-family: 'Mali', cursive;
     font-weight: 50px;
     margin-top: 30px;
 }
 
-#p1 {
+#p1, #p2 {
     text-align:center;
     width: 100%;
     color: #3A3332;
-    font-family: Actor;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin-top: 50px;
     font-size: 20px;
 }
 
-#p2 {
-    text-align:center;
-    width: 100%;
-    color: #3A3332;
-    font-family: Actor;
-    margin-top: 30px;
-    font-size: 20px;
-}
 
 .cakeOrderForm {
     margin: 50px 50px;
     padding: 30px;
     background-color: #e65c7d ;
     border-radius: 10px;
+    box-sizing: border-box;
+
 }
 
 .pInfo {
     float: left;
-    width: 50%;
+    width: calc(50% - 20px);
     padding: 10px;
     height: 580px;
 }              
 
 .buildCake {
     float: left;
-    width: 50%;
+    width: calc(50% - 20px);
     padding: 10px;
     height: 580px;
 }
@@ -141,7 +263,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 30px;
-
+    font-family: 'Mali', cursive;
 }
 
 .formElements {
@@ -149,7 +271,7 @@ footer {
 }
 
 input[type=text], select, textarea {
-    font-family: "Actor";
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 75%;
     padding: 10px;
     border: none;
@@ -161,11 +283,11 @@ input[type=text], select, textarea {
 
 #radio {
     margin-top: 15px;
-    font-family: "Actor";
+    font-family: 'IBM Plex Sans', sans-serif;
     color: white;
 }
 
-input[type=button] {
+input[type=submit] {
     margin-top: 30px;
     background-color: #3A3332;
     color: white;
@@ -174,11 +296,15 @@ input[type=button] {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
     background-color: white;
     color: #3A3332;
+    font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
 .totalBox {
@@ -190,7 +316,7 @@ input[type=button]:hover {
     width: 75%;
     border-radius: 10px;
     font-size: 18px;
-    font-family: "Actor"
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 

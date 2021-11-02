@@ -1,23 +1,8 @@
-@font-face {
-    font-family: 'Giulia-Regular';
-    src: url('Giulia-Regular.eot');
-    src: url('Giulia-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Giulia-Regular.svg#Giulia-Regular') format('svg'),
-        url('Giulia-Regular.ttf') format('truetype'),
-        url('Giulia-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .navbar {
-	
-	min-height: 100vh;
-	width: 100%;
-	background-image: url(https://lh3.googleusercontent.com/cLTOD_fIwXrRDFdfq0Ka2rbIOT5nT-egvXQE9DFzpvI0ZVaa4pPYtjJyjm-M3qwrJ7VMwuYizHoj8sRaxM16yq-k-OR5BDuRKBCXuw_vknY6iARXVYqIoGMnEnCwS_hxI7L0QfttXw=w2400); 
+	width: 100%; 
 	background-size: cover; 
-    z-index: 200;
+    z-index: 3;
 
-	
 }
 
 nav {
@@ -28,8 +13,6 @@ nav {
 	align-items: center;
 	background: rgba(255,214,220,0.80);
 	position: fixed;
-
-	
 }
 
 
@@ -38,14 +21,12 @@ nav img {
 }
 
 nav .navbar2 {
-	
 	flex: 1;
 	text-align: right;
-	font-family: "IBM Plex Sans";
+    font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 550;
 	position: relative;
   	display: inline-block;
-	
 }
 
 nav ul li {
@@ -57,10 +38,8 @@ nav ul li {
 }
 
 nav ul li a{
-	
 	text-decoration: none;
 	color: #E55F7f;
-
 }
 
 nav .fa {
@@ -181,18 +160,18 @@ nav .fas {
 
 
 footer {
-    font-family: "IBM Plex Sans";
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:#3A3332;
-    color:#EDEDED;
-    padding: 7px 20px;
-    letter-spacing: 3px;
-    font-size: 11.5px;
-    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:20px;
+	width:100%;
+	background:#242424;
+	color:#EDEDED;
+	padding: 7px 20px;
+	letter-spacing: 3px;
+	font-size: 11.5px;
+	
 }
 
 body {
@@ -201,37 +180,43 @@ body {
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 .undernav {
-    position: relative;
+    position: absolute; top:50px;
     width: 95%;
     margin: 30px auto 30px auto;
     padding: 30px;
-
 }
 
 .flex-child-contactForm{
     float: left;
-    width: 45%;
+
+    width: calc(45% - 10px);
     padding: 10px;
     height: fit-content;
+}
 
+.flex-child-col2{
+    float: right;
+
+    width: calc(45% - 10px);
+    padding: 10px;
+    height: fit-content;;
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Mali', cursive;
     color: #e65c7d;
     font-size: 50px;
 }
 
 h2 {
-    font-family: "Actor";
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #3A3332;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 20px;
 } 
 
@@ -240,7 +225,7 @@ form {
 }
 
 input[type=text], select, textarea {
-    font-family: "Actor";
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
     padding: 20px;
     border: none;
@@ -252,6 +237,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: #3A3332;
     color: white;
     width: 100%;
@@ -262,15 +248,9 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: #e65c7d;
     color: white;
-}
-
-.flex-child-col2{
-    float: right;
-    width: 45%;
-    padding: 10px;
-    height: fit-content;;
 }
 
 .contactbox { 
@@ -282,12 +262,12 @@ input[type=submit]:hover {
     width: 100%;
     border-radius: 10px;
     font-size: 18px;
-    font-family: "Actor";
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .contactbox-header {
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif; /* Replace w real font later */
+    font-family: 'Mali', cursive;
 }
 
 .image {
@@ -303,6 +283,7 @@ input[type=submit]:hover {
     text-align: center;
     font-size: 30px;
     color: #e65c7d;
+    font-family: 'Mali', cursive;
 }
 
 .customcake-button {
@@ -316,9 +297,9 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-    /*.undernav {
+    .undernav {
         width: 100%;
-    }*/
+    }
 
     .flex-child-contactForm {
         width: 100%;
