@@ -67,7 +67,7 @@
 
             <div class = "cakeOrderForm">
                 <div class = "formContainer">
-                <form class = "formElements" name = formData onsubmit="return validate(event)">
+                <form class = "formElements" name = "formData" onsubmit="return validate(event)">
                     <div class = "pInfo">
                         <h2 id = "formHeader"> Personal Info </h2>
 
@@ -148,7 +148,7 @@
                     </div>
 
                     <div class = "buildCake">
-                        <h2 id = formHeader> Build Your Cake </h2>
+                        <h2 id = "formHeader2"> Build Your Cake </h2>
 
                             <select id="cake0" name="cFlavor"> 
                                 <option id = "d1" value=""  disabled selected="selected">CAKE FLAVOR*</option>
@@ -189,7 +189,7 @@
 
                                 <textarea id="specialRequests" name="specialRequests" placeholder="SPECIAL REQUESTS" style="height:200px"></textarea>
 
-                            <div class = totalBox>
+                            <div class = "totalBox">
                                 <div id = "subtotal" value = "0"> Subtotal: $0</div>
                                 <div id = "tax" value = "0"> Tax: $0</div>
                                 <div id = "total" value = "0"> Total: $0</div>
