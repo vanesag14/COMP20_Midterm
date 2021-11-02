@@ -2,53 +2,88 @@
 <html>
 <header>
     <title>Sign In</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </header>
 <body>
-    <div class="sign-up-header">
-        <a style="text-decoration: none;" href="#">
-            <img class="logo-pic" src="mini-logo.png" alt="logo">
-        </a>
-        <h1>Sign in to your Pastelitos account</h1>
+    <nav>	
+        <!-- logo -->
+        <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+            
+        
+            <div class="navbar2" id="navbar2">
+                
+                    
+                <i class="fa fa-times" onClick="menuHide()"></i>
+                
+                <ul> 
+                <li><a href="index.html">  HOME </a></li>
+                
+                <div class="dropdown"> 	
+                    <li class="shop"><a href="products.html">SHOP</a></li>
+                    <div class="dropdown-content">
+                         <a href="#" class="order">ORDER FORM</a>
+                     </div>
+                </div>
+                
+                <div class="dropdown"> 
+                    <li class="about"><a href="aboutUs.html">ABOUT</a></li>
+                     <div class="dropdown-content">
+                         <a href="#">HISTORY</a>
+                     </div>
+                </div>
+                
+                <li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                <li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+                    
+                </ul>
+            </div>	
+            <i class="fa fa-bars" onClick="menuShow()"></i>
+        
+    </nav>
+    <div>
+        <p style="border: solid #FFDBDD 110px; color: #FFDBDD"> nothing</p>
+
     </div>
+    <div class="page-content" style="padding: 40px 20px 40px 20px; border: #333333 solid 20px; width: 50%; margin: auto; border-radius: 35px;">
+        <div class="sign-up-header">
+            <a style="text-decoration: none;" href="#">
+                <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
+            </a>
+            <h1>Sign in to your Pastelitos account</h1>
+        </div>
 
 
-    <div class="forms">
-        <form id="main-form" action="index.html" method="POST">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
+        <div class="forms">
+            <form id="main-form" action="index.html" method="POST">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
+                
+
+                <button type="submit" id="sign-in" class="btn" style="background-color: #3A3332; border: none; padding-left: 12%; padding-right: 12%; color: white;">Sign In</button>
+
+                <h2>Don't have an account?</h2>
+                
+                
+                <button type="submit" id="create" class="btn" style="background-color: white; border: #3A3332 solid 1px; padding-right: 9%; padding-left: 9%; color: #3A3332;">Create Account</button>
             
-
-            <button type="submit" id="sign-in" class="btn" style="background-color: #3A3332; border: none; padding-left: 12%; padding-right: 12%; color: white;">Sign In</button>
-
-            <h2>Don't have an account?</h2>
-            
-            
-            <button type="submit" id="create" class="btn" style="background-color: white; border: #3A3332 solid 1px; padding-right: 9%; padding-left: 9%; color: #3A3332;">Create Account</button>
-           
-        </form>
+            </form>
+        </div>
     </div>
     <script language="javascript">
 
-        //validates the form
-        $(document).ready(function() {
-            
-            $("#main-form").validate({
-                rules: {
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-
-                }
-            });
-            
-        });
+		var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
+	
     </script>
 </body>
 

@@ -2,79 +2,103 @@
 <html>
 <header>
     <title>Sign Up</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <meta name='viewport' content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="signUp.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </header>
 <body>
-    <div class="sign-up-header">
-        <a style="text-decoration: none;" href="#">
-            <img class="logo-pic" src="mini-logo.png" alt="logo">
-        </a>
-        <h1>Create your Pastelitos account</h1>
-    </div>
-
-
-    <div class="forms">
-        <form id="main-form" action="index.html" method="POST">
-            <label for="name"></label>
-            <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
-            <label for="name"></label>
-            <input type="text" name="lname" id="last-name" class="text-input" placeholder="Last name">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
-            <label for="password"></label>
-            <input type="password" name="psword" id="password" class="text-input" placeholder="Create a password">
-
-            <div class="checkbox1">
-                <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
-                <label for="remember-me">Keep me signed in</label>
-            </div>
-
-            <div class="checkbox2">
-                <input type="checkbox" name="send-emails" id="send-emails" class="checkbox">
-                <label for="send-emails">Send me emails about new arrivals, savings & more.</label>
-            </div>
-            <p class="terms1">By clicking Create Account, you acknowledge you have read </p>
-            <p class="terms2">and agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></p>
-
-            <button type="submit" id="create" class="btn">Create Account</button>
-
-            <h2>Already have an account?</h2>
+    <nav>	
+        <!-- logo -->
+        <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
             
-            
-            <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
-           
-        </form>
-    </div>
+        
+            <div class="navbar2" id="navbar2">
+                
+                    
+                <i class="fa fa-times" onClick="menuHide()"></i>
+                
+                <ul> 
+                <li><a href="index.html">  HOME </a></li>
+                
+                <div class="dropdown"> 	
+                    <li class="shop"><a href="products.html">SHOP</a></li>
+                    <div class="dropdown-content">
+                         <a href="#" class="order">ORDER FORM</a>
+                     </div>
+                </div>
+                
+                <div class="dropdown"> 
+                    <li class="about"><a href="aboutUs.html">ABOUT</a></li>
+                     <div class="dropdown-content">
+                         <a href="#">HISTORY</a>
+                     </div>
+                </div>
+                
+                <li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                <li class="contactus"><a href="ContactUs.html" style="color: white;">CONTACT US</a></li>
+                    
+                </ul>
+            </div>	
+            <i class="fa fa-bars" onClick="menuShow()"></i>
+        
+    </nav>
+    <div>
+        <p style="border: solid #FFDBDD 60px; color: #FFDBDD"> nothing</p>
 
+    </div>
+    <div class="page-content" style="padding: 40px 20px 40px 20px; border: #333333 solid 20px; width: 50%; margin: auto; border-radius: 35px;">
+        <div class="sign-up-header">
+            <a style="text-decoration: none;" href="#">
+                <img class="logo-pic" src="pictures/mini-logo.png" alt="logo">
+            </a>
+            <h1>Create your Pastelitos account</h1>
+        </div>
+
+
+        <div class="forms">
+            <form id="main-form" action="index.html" method="POST">
+                <label for="name"></label>
+                <input type="text" name="fname" id="first-name" class="text-input" placeholder="First name">
+                <label for="name"></label>
+                <input type="text" name="lname" id="last-name" class="text-input" placeholder="Last name">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="text-input" placeholder="Email address">
+                <label for="password"></label>
+                <input type="password" name="psword" id="password" class="text-input" placeholder="Create a password">
+
+                <div class="checkbox1">
+                    <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
+                    <label for="remember-me">Keep me signed in</label>
+                </div>
+
+                <div class="checkbox2">
+                    <input type="checkbox" name="send-emails" id="send-emails" class="checkbox">
+                    <label for="send-emails">Send me emails about new arrivals, savings & more.</label>
+                </div>
+                <p class="terms1">By clicking Create Account, you acknowledge you have read </p>
+                <p class="terms2">and agreed to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></p>
+
+                <button type="submit" id="create" class="btn">Create Account</button>
+
+                <h2>Already have an account?</h2>
+                
+                
+                <button type="submit" id="sign-in" class="btn" value="sign in">Sign in</button>
+            
+            </form>
+        </div>
+    </div>
     <script language="javascript">
-        $(document).ready (function(){
-            
-            //validation of the sign up form
-            $("#main-form").validate({
-                rules: {
-                    fname: {
-                        required: true
-                    },
-                    lname: {
-                        required: true
-                    },
-                    psword: {
-                        required: true,
-                        minlength: 8
-                    },
-                    email: {
-                        required: true
-                    }
-                },
-                submitHandler: function() {
-                    //put whatever I want the buttons to do in here
-                }
-
-            });
-        });
+      var navbar2 = document.getElementById('navbar2');
+		
+		function menuShow() {
+			navbar2.style.right= "0";
+		}
+		
+		function menuHide() {
+			navbar2.style.right= "-200px";
+		}
     </script>
 </body>
 
