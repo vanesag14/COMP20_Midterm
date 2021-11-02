@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet">
+    <meta name="keywords" content="cakes, pastries, small business, bakery, pastry shop, local business, coffee, Boston">
+    <link rel="shortcut icon" type="image/jpg" href="./pictures/mini-logo.png"/>
     <style>
         * {
             margin: 0;
@@ -56,16 +58,228 @@
             bottom:0px;
             height:20px;
             width:100%;
-            background:#242424;
-            color:#EDEDED;
+            background:#333334;
+            color:#fff;
             padding: 7px 20px;
             letter-spacing: 3px;
             font-size: 11.5px;
         }
+
+        /* Navigation Bar */
+        .navbar-fixed-top.scrolled {
+            background-color: #fff !important;
+            transition: background-color 200ms linear;
+        }
         
+        .navbar {
+            
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(https://lh3.googleusercontent.com/cLTOD_fIwXrRDFdfq0Ka2rbIOT5nT-egvXQE9DFzpvI0ZVaa4pPYtjJyjm-M3qwrJ7VMwuYizHoj8sRaxM16yq-k-OR5BDuRKBCXuw_vknY6iARXVYqIoGMnEnCwS_hxI7L0QfttXw=w2400); 
+            background-size: cover; 
+        
+            
+        }
+        
+        nav {
+            width: 88%;
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,214,220,0.80);
+            position: fixed;
+        
+            
+        }
+        
+        
+        nav img {
+            width: 250px; /*Logo + Title size */
+        }
+        
+        nav .navbar2 {
+            
+            flex: 1;
+            text-align: right;
+            font-family: "IBM Plex Sans";
+            font-weight: 550;
+            position: relative;
+                display: inline-block;
+            
+        }
+        
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            
+        }
+        
+        nav ul li a{
+            
+            text-decoration: none;
+            color: #E55F7f;
+        
+        }
+        
+        nav .fa {
+            display: none;
+        }
+        
+        nav .fas {
+            display: none;
+        }
+        
+        .navbar2 .contactus {
+            
+                border:solid #333333; 
+                border-radius: 20px; 
+                padding-right: 18px; 
+                padding-left: 18px; 
+                background: #333; 
+                color: #fff !important; 
+        }
+        
+        
+        
+        /* Dropdown menu on Navbar */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFF0F1;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content .order {
+            min-width: 105px;
+        }
+        
+        .dropdown-content a {
+            color: #E55F7F;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #FFDADE;
+            border-radius: 20px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            border-radius: 20px;
+
+        }
+        
+        .dropdown:hover .about {
+            background-color: #FFFFFF;
+        
+        }
+        
+        .dropdown:hover .shop {
+            background-color: #FFFFFF;
+        }
+
+        body {
+            background-color: #FFDBDD;
+        }
+
+        .sign-up-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sign-up-header .logo-pic {
+            height: 5em;
+        }
+
+        .sign-up-header h1 {
+            font-size: 20px;
+            font-family: 'Mali', cursive;
+        }
+
+        .dropdown:hover .home {
+            background-color: #FFFFFF;
+            border-radius: 18px;
+            
+        }
+
+        .dropdown:hover .about {
+            background-color: #FFFFFF;
+            border-radius: 18px;
+
+        }
+
+        .dropdown:hover .shop {
+            background-color: #FFFFFF;
+            border-radius: 18px;
+        }
+
+        .dropdown:hover .profile {
+            background-color: #FFFFFF;
+            border-radius: 18px;
+
+        }
+
+        .dropdown:hover .contactus {
+            border:solid #E55F7f;
+            background: #E55F7F;
+        }
+
+        .buffer {
+            padding-top: 100px;
+            color: #FFDBDD;
+        }
     </style>
 </head>
 <body>
+    <nav>	
+        <!-- logo -->
+        <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+            
+        
+            <div class="navbar2" id="navbar2">
+                
+                    
+                <i class="fa fa-times" onClick="menuHide()"></i>
+                
+                <ul> 
+                <li><a href="index.html">  HOME </a></li>
+                
+                <div class="dropdown"> 	
+                    <li class="shop"><a href="productPage1.html">MENU</a></li>
+                    <div class="dropdown-content">
+                         <a href="orderFormFiles/orderForm.html" class="order">ORDER FORM</a>
+                     </div>
+                </div>
+                
+                <div class="dropdown"> 
+                    <li class="about"><a href="aboutUs2.html">ABOUT</a></li>
+                </div>
+                
+                <li><a href="signIn.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                <li class="contactus"><a href="ContactUsFiles/ContactUs.html" style="color: white;">CONTACT US</a></li>
+                    
+                </ul>
+            </div>	
+            <i class="fa fa-bars" onClick="menuShow()"></i>
+        
+    </nav>
+    <div class="buffer">
+        ads
+    </div>
+
     <h1>Terms of Use</h1>
 
     <div class="page-content">
