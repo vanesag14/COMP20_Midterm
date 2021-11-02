@@ -1,223 +1,213 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Catalog</title>
-    <meta charset="UTF-8"> 
-    <meta name='viewport' content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet"> 
+    <head>
+        <title>Catalog</title>
+        <meta charset="UTF-8"> 
+        <link rel="shortcut icon" type="image/jpg" href="./pictures/mini-logo.png"/>
+        <meta name='viewport' content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="cakes, pastries, small business, bakery, pastry shop, local business, coffee, Boston">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="productPage.css"/>
-</head>
-<body style="background-color: #ffdbdd;">
-    <header class= "navbar">
-		<nav>	
-			<!-- logo -->
-			<a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
-				
-			
-				<div class="navbar2" id="navbar2">
-					
+        <link rel="stylesheet" href="productPage.css"/>
+    </head>
+    <body style="background-color: #FFD6DC">
+        <header class= "navbar">
+            <nav>	
+                <!-- logo -->
+                <a href="index.html"> <img src="https://lh3.googleusercontent.com/KXyUOUmQ6L_NUi55EwTEuT4kFOW_JnFp4irlLJ9UmQGxaMNgXJcXkmwfdJkLTfNMVzn4RKjD2GIX4ke1ryWrPR-JtOUWD_xvhOiSywzHiPQfv3pShbYIMeYQ2Q2kBlvy35NLdn158Q=w2400" alt="logo"></a> 
+                    
+                <div class="navbar2" id="navbar2">
+                <i class="fa fa-times" onClick="menuHide()"></i>
+                    <ul> 
+                        <div class="dropdown"> 	
+                            <li class="home"><a href="index.html">HOME </a></li>
+                        </div>
+                        
+                        <div class="dropdown"> 	
+                            <li class="shop"><a href="productPage1.html">SHOP</a></li>
+                            <div class="dropdown-content">
+                                <a href="./orderFormFiles/orderForm.html" class="order">ORDER FORM</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown"> 
+                            <li class="about"><a href="aboutus2.html">ABOUT</a></li>
+                        </div>
+                        
+                        <li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
+                        <li class="contactus"><a href="./ContactUsFiles/ContactUs.html" style="color: white;">CONTACT US</a></li>
+                    </ul>
+                </div>	
+                
+                <i class="fa fa-bars" onClick="menuShow()"></i>
+            </nav>
+        </header>
 
-					<i class="fa fa-times" onClick="menuHide()"></i>
-					
-					<ul> 
-					<li><a href="index.html">HOME</a></li>
-					
-					<div class="dropdown"> 	
-						<li class="shop"><a href="productPage1.html">SHOP</a></li>
-						<div class="dropdown-content">
-							 <a href="./orderFormFiles/orderForm.html" class="order">ORDER FORM</a>
-						 </div>
-					</div>
-					
-					<div class="dropdown"> 
-						<li class="about"><a href="aboutus2.html">ABOUT</a></li>
-						 <div class="dropdown-content">
-							 <a href="#">HISTORY</a>
-						 </div>
-					</div>
-					
-					<li><a href="index.html"> <img src="https://lh3.googleusercontent.com/h_GUL71CLjMVYh--Bj4uGAyrMAvsD4Srsw6PuF_-LW8tYOsoqjih2g_kSG2zdGWnrFo7FQZxdAd_yzUWUXSPcElQVoZh8yUVklc1n-KAy3qOXHpffg3B5iYdI8AVJTwFq72GsytlxQ=w2400" style="width: 15px; padding-right: 7px"></a></li> <!-- change  -->
-					<li class="contactus"><a href="./ContactUsFiles/ContactUs.html" style="color: white;">CONTACT US</a></li>
-						
-					</ul>
-				</div>	
-				<i class="fa fa-bars" onClick="menuShow()"></i>
-			
-		</nav>
-	</header>
+        <section class="product-list" style="background-color: #FFD6DC;">
+            <h1>Menu</h1>
 
-    <section class="product-list" style="background-color: #ffdbdd;">
-        <h1>Menu</h1>
-
-        <!-- buttons section -->
-        <div class="menu-selection">
-            <ul>
-                <a href="#target1"><li>CAKES</li></a>
-                <a href="#target2" > <li>PASTRIES</li></a>
-                <a href="#target3" class="last-item"><li>DRINKS</li></a>
-            </ul>
-        </div>
-        <h2 id="target1">Cakes</h2> 
-        <!-- cakes section -->
-        <div class="cakes">
-            <!-- first cake -->
-            <div class="card">
-                 <div class="image">
-                    <img src="./pictures/cake.jpeg" alt="cake"/>
-                </div>
-                <div class="text">
-                    <h3 class="title">Blueberry cake</h3>
-                    <p class="description">Cost: $80 <br> Ingredients: Milk, Blueberries</p>
-                </div>
+            <!-- buttons section -->
+            <div class="menu-selection">
+                <ul>
+                    <a href="#target1"><li>CAKES</li></a>
+                    <a href="#target2" > <li>PASTRIES</li></a>
+                    <a href="#target3" class="last-item"><li>DRINKS</li></a>
+                </ul>
             </div>
-            
-            <div class="card">
-                <div class="image">
-                   <img src="./pictures/strawberry.jpeg" alt="cake"/>
-               </div>
-               <div class="text">
-                   <h3 class="title">Strawberry cake</h3>
-                   <p class="description">Cost: $80 <br> Ingredients: Milk, Strawberries</p>
-               </div>
-           </div>
-
-           <div class="card">
-            <div class="image">
-               <img src="./pictures/chocolate.jpeg" alt="cake"/>
-           </div>
-           <div class="text">
-               <h3 class="title">Chocolate cake</h3>
-               <p class="description">Cost: $80 <br> Ingredients: Milk, Chocolate</p>
-           </div>
-       </div>
-
-        <!-- first cake -->
-        <div class="card">
-            <div class="image">
-               <img src="./pictures/choc.jpg" alt="cake"/>
-           </div>
-           <div class="text">
-               <h3 class="title">Dark Sweet Treat</h3>
-               <p class="description">Cost: $80 <br> Ingredients: Milk, Dark Chocolate</p>
-           </div>
-       </div>
-       
-       <div class="card">
-           <div class="image">
-              <img src="./pictures/mac.jpg" alt="cake"/>
-          </div>
-          <div class="text">
-              <h3 class="title">Macaroon Dulce Delight</h3>
-              <p class="description">Cost: $80 <br> Ingredients: Milk, Macaroon</p>
-          </div>
-      </div>
-
-      <div class="card">
-       <div class="image">
-          <img src="./pictures/flo.jpg" alt="cake"/>
-      </div>
-      <div class="text">
-          <h3 class="title">Decorative Boda cake</h3>
-          <p class="description">Cost: $80 <br> Ingredients: Milk, Vanilla</p>
-      </div>
-        </div>
-
-        </div>
-
-        <h2 id="target2">Pastries</h2> 
-        <!-- pastries seciton -->
-        <div class="pastries">
-            <!-- first pastries -->
-            <div class="card">
-                <div class="image">
-                   <img src="./pictures/cookies.jpeg" alt="cake"/>
-               </div>
-               <div class="text">
-                   <h3 class="title">Chocate Chip Cookies</h3>
-                   <p class="description">Cost: $3 <br> Ingredients: Milk, Chocolate chips</p>
-               </div>
-           </div>
-           <!-- second pastries -->
-           <div class="card">
-                <div class="image">
-                    <img src="./pictures/flan.jpeg" alt="cake"/>
+            <h2 id="target1">Cakes</h2> 
+            <!-- cakes section -->
+            <div class="cakes">
+                <!-- first cake -->
+                <div class="card">
+                    <div class="image">
+                        <img src="./pictures/cake.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Blueberry cake</h3>
+                        <p class="description">Cost: $80 <br> Ingredients: Milk, Blueberries</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="image">
+                    <img src="./pictures/strawberry.jpeg" alt="cake"/>
                 </div>
                 <div class="text">
-                    <h3 class="title">Flan</h3>
-                    <p class="description">Cost: $4 <br> Ingredients: Milk, Sugar</p>
-                </div>
-           </div>
-
-           <!-- third pastries -->
-           <div class="card">
-                <div class="image">
-                    <img src="./pictures/muffin.jpeg" alt="cake"/>
-                </div>
-                <div class="text">
-                    <h3 class="title">Muffin</h3>
-                    <p class="description">Cost: $4 <br> Ingredients: Milk, Sugar</p>
+                    <h3 class="title">Strawberry cake</h3>
+                    <p class="description">Cost: $80 <br> Ingredients: Milk, Strawberries</p>
                 </div>
             </div>
 
-        </div>
-
-        <h2 id="target3">Drink</h2> 
-        <!-- drinks section -->
-        <div class="drinks" style = "padding-bottom: 150px;">
-            <!-- first drink -->
             <div class="card">
                 <div class="image">
-                   <img src="./pictures/latte.jpeg" alt="cake"/>
-               </div>
-               <div class="text">
-                   <h3 class="title">Latte</h3>
-                   <p class="description">Cost: $5 <br> Ingredients: Milk, Coffee</p>
-               </div>
-           </div>
-           <div class="card">
-                <div class="image">
-                    <img src="./pictures/icedcoffe.jpeg" alt="cake"/>
+                    <img src="./pictures/chocolate.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Chocolate cake</h3>
+                        <p class="description">Cost: $80 <br> Ingredients: Milk, Chocolate</p>
+                    </div>
+                </div>
+                
+                <!-- first cake -->
+                <div class="card">
+                    <div class="image">
+                        <img src="./pictures/choc.jpg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Dark Sweet Treat</h3>
+                        <p class="description">Cost: $80 <br> Ingredients: Milk, Dark Chocolate</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="image">
+                        <img src="./pictures/mac.jpg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Macaroon Dulce Delight</h3>
+                        <p class="description">Cost: $80 <br> Ingredients: Milk, Macaroon</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="image">
+                        <img src="./pictures/flo.jpg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Decorative Boda cake</h3>
+                        <p class="description">Cost: $80 <br> Ingredients: Milk, Vanilla</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="target2">Pastries</h2> 
+            <!-- pastries seciton -->
+            <div class="pastries">
+                <!-- first pastries -->
+                <div class="card">
+                    <div class="image">
+                    <img src="./pictures/cookies.jpeg" alt="cake"/>
                 </div>
                 <div class="text">
-                    <h3 class="title">Iced Coffee</h3>
+                    <h3 class="title">Chocate Chip Cookies</h3>
+                    <p class="description">Cost: $3 <br> Ingredients: Milk, Chocolate chips</p>
+                </div>
+            </div>
+            <!-- second pastries -->
+            <div class="card">
+                    <div class="image">
+                        <img src="./pictures/flan.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Flan</h3>
+                        <p class="description">Cost: $4 <br> Ingredients: Milk, Sugar</p>
+                    </div>
+            </div>
+
+            <!-- third pastries -->
+            <div class="card">
+                    <div class="image">
+                        <img src="./pictures/muffin.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Muffin</h3>
+                        <p class="description">Cost: $4 <br> Ingredients: Milk, Sugar</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="target3">Drink</h2> 
+            <!-- drinks section -->
+            <div class="drinks" style = "padding-bottom: 150px;">
+                <!-- first drink -->
+                <div class="card">
+                    <div class="image">
+                    <img src="./pictures/latte.jpeg" alt="cake"/>
+                </div>
+                <div class="text">
+                    <h3 class="title">Latte</h3>
                     <p class="description">Cost: $5 <br> Ingredients: Milk, Coffee</p>
                 </div>
             </div>
             <div class="card">
-                <div class="image">
-                    <img src="./pictures/shot.jpeg" alt="cake"/>
+                    <div class="image">
+                        <img src="./pictures/icedcoffe.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Iced Coffee</h3>
+                        <p class="description">Cost: $5 <br> Ingredients: Milk, Coffee</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <h3 class="title">Espresso Shot</h3>
-                    <p class="description">Cost: $2.50 <br> Ingredients: Espresso</p>
+                <div class="card">
+                    <div class="image">
+                        <img src="./pictures/shot.jpeg" alt="cake"/>
+                    </div>
+                    <div class="text">
+                        <h3 class="title">Espresso Shot</h3>
+                        <p class="description">Cost: $2.50 <br> Ingredients: Espresso</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
-      </footer>
-
-      <script language="javascript"> 
-		
-		var navbar2 = document.getElementById('navbar2');
-		
-		function menuShow() {
-			navbar2.style.right= "0";
-		}
-		
-		function menuHide() {
-			navbar2.style.right= "-200px";
-		}
-	</script>
-
-</body>
+        </section>
+        
+        <footer>
+            <p> <strong> &copy; 3 LATINAS + DANIEL | CS20 | MIDTERM PROJECT </strong></p>	
+        </footer>
+        
+        <script language="javascript"> 
+        var navbar2 = document.getElementById('navbar2');
+        function menuShow() {
+            navbar2.style.right= "0";
+        }
+        function menuHide() {
+            navbar2.style.right= "-200px";
+        }
+        </script>
+    </body>
 </html>
