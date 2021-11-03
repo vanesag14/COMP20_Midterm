@@ -9,8 +9,6 @@
 
 
 /* Navigation Bar */
-
-
 .navbar {
 	
 	min-height: 100vh;
@@ -72,7 +70,7 @@ nav .fas {
 
 .navbar2 .contactus {
 	
-		border:solid #333333; 
+		border:solid #333334; 
 		border-radius: 20px; 
 		padding-right: 18px; 
 		padding-left: 18px; 
@@ -107,32 +105,53 @@ nav .fas {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border-radius: 18px;
 }
 
 .dropdown-content a:hover {
 	background-color: #FFDADE;
+	border-radius: 20px;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
+	border-radius: 20px;
+}
+
+.dropdown:hover .home {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+	
 }
 
 .dropdown:hover .about {
 	background-color: #FFFFFF;
+	border-radius: 18px;
 
 }
 
 .dropdown:hover .shop {
 	background-color: #FFFFFF;
+	border-radius: 18px;
 }
 
+.dropdown:hover .profile {
+	background-color: #FFFFFF;
+	border-radius: 18px;
 
+}
+
+.dropdown:hover .contactus {
+	border:solid #E55F7f;
+	background: #E55F7F;
+}
 
 
 /* Page Content*/
 
 body h1{
-	 font-family: 'Mali', cursive; 
+	 font-family: 'Mali', cursive;
+	 font-size: 50px;
 }
 
 body h2 {
@@ -205,7 +224,7 @@ body p {
 	
 	nav .fa {
 	display: block;
-	color: #333333;
+	color: #333334;
 	margin: 15px;
 	font-size: 25px;
 	cursor: pointer; 
@@ -292,10 +311,28 @@ body p {
 	font-size: 15px;
 }
 
+.cake-col a {
+	background-color:#333334;
+	text-decoration: none; 
+	color: white; 
+	border: solid #333334; 
+	padding: 11px;
+	border-radius: 28px;
+}
 
 .cake-col:hover {
 	box-shadow: 0 0 20px 0px rgba(115,115,115,0.20);
+	
+	
 }
+
+
+.cakebutton:hover {
+	background: #E55F7F;
+	border: solid #E55F7F;
+}
+
+
 @media (max-width: 700px) {
 	
 	.cakes {
@@ -315,7 +352,7 @@ body p {
 
 .container3 .box-3 h1 {
 	font-family: 'Mali', cursive; 
-	font-size: 45px;
+	font-size: 50px;
 	color: #E55F7F;
 	text-align: center;
 }
@@ -385,4 +422,22 @@ footer {
 	letter-spacing: 3px;
 	font-size: 11.5px;
 	
+}
+
+
+.links {
+	position: absolute;
+    right:0;
+    margin-right: 60px;
+}
+
+.nodecoration {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+
+footer a {
+	text-decoration:none!important;
 }

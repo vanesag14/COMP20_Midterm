@@ -126,19 +126,37 @@ nav .fas {
 
 .dropdown-content a:hover {
 	background-color: #FFDADE;
+    border-radius: 20px;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
+    border-radius: 20px;
+}
+.dropdown:hover .home {
+	background-color: #FFFFFF;
+	border-radius: 18px;
 }
 
 .dropdown:hover .about {
 	background-color: #FFFFFF;
-
+    border-radius: 18px;
 }
 
 .dropdown:hover .shop {
 	background-color: #FFFFFF;
+    border-radius: 18px;
+}
+
+.dropdown:hover .profile {
+	background-color: #FFFFFF;
+	border-radius: 18px;
+
+}
+
+.dropdown:hover .contactus {
+	border:solid #E55F7f;
+	background: #E55F7F;
 }
 
 
@@ -196,16 +214,16 @@ nav .fas {
 
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
-	position:fixed;
-	left:0px;
-	bottom:0px;
-	height:20px;
-	width:100%;
-	background:#333334;
-	color:#FFFFFF;
-	padding: 7px 20px;
-	letter-spacing: 3px;
-	font-size: 11.5px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:20px;
+    width:100%;
+    background:#333334;
+    color:#FFFFFF;
+    padding: 7px 20px;
+    letter-spacing: 3px;
+    font-size: 11.5px;
 }
 
 body {
