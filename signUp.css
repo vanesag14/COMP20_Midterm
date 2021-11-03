@@ -274,6 +274,7 @@ input.checkbox{
     border-radius: 20px;
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 450;
 }
 
 .forms .btn:hover{
