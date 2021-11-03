@@ -270,15 +270,14 @@ input.checkbox{
     padding-left: 10%;
     padding-right: 10%;
     background-color: #3A3332;
+    border: #3A3332;
     border-radius: 20px;
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .forms .btn:hover{
-    border:solid #E55F7f 2px;
 	background: #E55F7F;
-    color: white;
 }
 
 #sign-in.btn.signin {
