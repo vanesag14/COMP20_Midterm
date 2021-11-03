@@ -274,6 +274,7 @@ input.checkbox{
     border-radius: 20px;
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 450;
 }
 
 .forms .btn:hover{
@@ -340,7 +341,7 @@ input.checkbox{
  }
 
 .terms2 a {
-    color: rgb(240, 151, 196);
+    color: #E55F7f;
 }
 
 footer {
